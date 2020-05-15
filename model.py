@@ -26,13 +26,10 @@ class BaselineModel(Model):
 
         self.inception_output_size = 2048
 
-        self.rnn = LSTM(self.args.hidden_size,
-                        return_sequences=True,
-                        return_state=False)
+        self.rnn = LSTM(self.args.hidden_size)
 
         self.out = Dense(2,
-                         input_shape=(self.args.hidden_size,),
-                         activation='softmax')
+                         input_shape=(self.args.hidden_size,))
 
         self.dropout = Dropout(self.args.drop_prob)
 

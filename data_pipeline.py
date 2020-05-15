@@ -15,19 +15,20 @@ from util import image_show
 
 class VideoDataset(tfds.core.GeneratorBasedBuilder):
 
-    VERSION = tfds.core.Version("0.0.5")
-
-    MANUAL_DOWNLOAD_INSTRUCTIONS = "Dataset already downloaded manually"
-
     def __init__(self, args):
 
         self.args = args
+
+        self.VERSION = tfds.core.Version(self.args.dataset_version)
+        self.MANUAL_DOWNLOAD_INSTRUCTIONS = "Dataset already downloaded manually"
 
         super(tfds.core.GeneratorBasedBuilder, self).__init__()
 
     def _info(self):
 
-        ffmpeg_extra_args = ('-s', f'{self.args.frame_width}x{self.args.frame_height}', '-vf', f'fps={self.args.frames_per_second}')
+        ffmpeg_extra_args = ('-s', f'{self.args.frame_width}x{self.args.frame_height}',
+                             '-vf', f'fps={self.args.frames_per_second}',
+                             '-preset', 'ultrafast')
 
         return tfds.core.DatasetInfo(
             builder=self,
@@ -58,14 +59,28 @@ class VideoDataset(tfds.core.GeneratorBasedBuilder):
             tfds.core.SplitGenerator(
                 name=tfds.Split.TRAIN,
                 gen_kwargs={
-                    "input_dir": self.args.input_dir
+                    "input_dir": os.path.join(self.args.input_dir, 'train')
+                },
+            ),
+
+            tfds.core.SplitGenerator(
+                name=tfds.Split.VALIDATION,
+                gen_kwargs={
+                    "input_dir": os.path.join(self.args.input_dir, 'dev')
+                },
+            ),
+
+            tfds.core.SplitGenerator(
+                name=tfds.Split.TEST,
+                gen_kwargs={
+                    "input_dir": os.path.join(self.args.input_dir, 'test')
                 },
             )
         ]
 
     def _generate_examples(self, input_dir):
 
-        file_list = tf.data.Dataset.list_files(os.path.join(input_dir, '*', '*.json'))
+        file_list = tf.data.Dataset.list_files(os.path.join(input_dir, '*', self.args.metadadata_files))
 
         for file in file_list:
 

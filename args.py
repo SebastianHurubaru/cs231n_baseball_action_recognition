@@ -50,7 +50,7 @@ def get_train_args():
     parser.add_argument('--metric_name',
                         type=str,
                         default='mse_loss',
-                        choices=('mse_loss'),
+                        choices=('mse_loss',),
                         help='Name of dev metric to determine best checkpoint.')
 
     parser.add_argument('--eval_steps',
@@ -71,7 +71,7 @@ def get_train_args():
     parser.add_argument('--optimizer',
                         type=str,
                         default='Adamax',
-                        choices=('Adamax, Adadelta'),
+                        choices=('Adamax', 'Adadelta'),
                         help='Name of dev metric to determine best checkpoint.')
 
     parser.add_argument('--use_lr_scheduler',
@@ -102,12 +102,20 @@ def get_test_args():
 def add_common_args(parser):
 
     """
-    Add arguments common to all 3 scripts: setup.py, train.py, test.py
+    Add arguments common to all 3 scripts: train.py, test.py
     """
 
     parser.add_argument('--input_dir',
                         type=str,
-                        default='./data/videos')
+                        default='./data')
+
+    parser.add_argument('--dataset_version',
+                        type=str,
+                        default='0.0.1')
+
+    parser.add_argument('--metadadata_files',
+                        type=str,
+                        default='*-full-metadata.json')
 
     parser.add_argument('--frames_per_second',
                         type=int,
@@ -129,10 +137,15 @@ def add_common_args(parser):
                         type=str,
                         choices=['baseline'],
                         default='baseline')
+
     parser.add_argument('--save_dir',
                         type=str,
                         default='./save/',
                         help='Base directory for saving information.')
+
+    parser.add_argument('--log_device_placement',
+                        type=bool,
+                        default=False)
 
 def add_train_test_args(parser):
     """
@@ -156,7 +169,7 @@ def add_train_test_args(parser):
 
     parser.add_argument('--batch_size',
                         type=int,
-                        default=1,
+                        default=16,
                         help='Batch size per GPU. Scales automatically when \
                                   multiple GPUs are available.')
 
