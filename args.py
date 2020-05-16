@@ -169,7 +169,7 @@ def add_train_test_args(parser):
 
     parser.add_argument('--batch_size',
                         type=int,
-                        default=16,
+                        default=8,
                         help='Batch size per GPU. Scales automatically when \
                                   multiple GPUs are available.')
 

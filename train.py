@@ -10,7 +10,7 @@ import tensorflow_datasets as tfds
 import datetime
 
 from args import get_train_args
-from data_pipeline import VideoDataset
+from data_pipeline import FramesDatasetBuilder
 
 from model import create_model
 
@@ -61,38 +61,33 @@ if __name__ == '__main__':
 
     tf.debugging.set_log_device_placement(args.log_device_placement)
 
-    # Get the data over the CPU
-    with tf.device('/CPU:0'):
+    configure_gpus()
 
-        # Setup the output dir
-        run_dir = args.save_dir + '_' + args.name + '_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
-        tensorboard_callback = tf.keras.callbacks.TensorBoard(log_dir=run_dir, histogram_freq=1)
+    # Setup the output dir
+    run_dir = args.save_dir + '_' + args.name + '_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    writer = tf.summary.create_file_writer(run_dir)
+    writer.set_as_default()
 
-        # Setup the data
-        builder = VideoDataset(args=args)
-        builder.download_and_prepare(
-            download_config=tfds.download.DownloadConfig(
-                download_mode=tfds.core.download.GenerateMode.REUSE_DATASET_IF_EXISTS,
-                manual_dir=args.input_dir
-            )
-        )
-        ds_train = builder.as_dataset(split=tfds.Split.TRAIN, as_supervised=True) \
-            .map(builder._normalize_frames,
-                 num_parallel_calls=tf.data.experimental.AUTOTUNE)
-
-        ds_dev = builder.as_dataset(split=tfds.Split.VALIDATION, as_supervised=True) \
-            .map(builder._normalize_frames, num_parallel_calls=tf.data.experimental.AUTOTUNE)
-
-    # Copy the model on each GPU and use data parallelism
-    # strategy = tf.distribute.MirroredStrategy()
-
-    strategy = tf.distribute.OneDeviceStrategy(device="/gpu:1")
-
-    # strategy = tf.distribute.experimental.CentralStorageStrategy()
-    # ds_train = strategy.experimental_distribute_dataset(dataset=ds_train)
-    # ds_dev = strategy.experimental_distribute_dataset(dataset=ds_dev)
+    # Keep all variables on CPU and just do the operations on GPUs
+    strategy = tf.distribute.experimental.CentralStorageStrategy()
 
     GLOBAL_BATCH_SIZE = args.batch_size * strategy.num_replicas_in_sync
+
+    # Setup the frames data
+    builder = FramesDatasetBuilder(args=args)
+    builder.download_and_prepare(
+        download_config=tfds.download.DownloadConfig(
+            download_mode=tfds.core.download.GenerateMode.REUSE_DATASET_IF_EXISTS,
+            manual_dir=args.input_dir
+        )
+    )
+
+    ds_train = builder.as_dataset(split=tfds.Split.TRAIN, as_supervised=True).batch(GLOBAL_BATCH_SIZE)
+    ds_dev = builder.as_dataset(split=tfds.Split.VALIDATION, as_supervised=True).batch(GLOBAL_BATCH_SIZE)
+
+    # distribute the dataset needed by the CentralStorageStrategy strategy
+    ds_train = strategy.experimental_distribute_dataset(dataset=ds_train)
+    ds_dev = strategy.experimental_distribute_dataset(dataset=ds_dev)
 
     with strategy.scope():
 
@@ -119,6 +114,7 @@ if __name__ == '__main__':
 
         checkpoint = tf.train.Checkpoint(optimizer=optimizer, model=model)
 
+        step = 0
         for epoch in range(args.num_epochs):
 
             total_loss = 0.0
@@ -126,9 +122,12 @@ if __name__ == '__main__':
 
             # Train
             for (frames, labels) in ds_train:
-                for i in range(0, frames.shape[0], args.batch_size):
-                    total_loss += distributed_train_step((frames[i:i+args.batch_size], labels[i:i+args.batch_size]))
-                    num_batches += 1
+                total_loss += distributed_train_step((frames, labels)).numpy()
+                step += 1
+
+                if step % 100:
+                    tf.summary.scalar('train_loss', train_loss, step=step)
+                    tf.summary.scalar('train_accuracy', train_accuracy.result() * 100, step=step)
 
             train_loss = total_loss / num_batches
 
@@ -137,10 +136,8 @@ if __name__ == '__main__':
                 for i in range(0, frames.shape[0], args.batch_size):
                     distributed_eval_step((frames[i:i + args.batch_size], labels[i:i+args.batch_size]))
 
-            template = "Epoch {}, Loss: {}, Accuracy: {}, Dev Loss: {}, Dev Accuracy: {}"
-            print(template.format(epoch + 1, train_loss,
-                                  train_accuracy.result() * 100, dev_loss.result(),
-                                  dev_accuracy.result() * 100))
+            tf.summary.scalar('dev_loss', dev_loss.result(), step=step)
+            tf.summary.scalar('dev_accuracy', dev_accuracy.result() * 100, step=step)
 
             print('Saving model checkpoint ...')
             checkpoint.save(run_dir)
