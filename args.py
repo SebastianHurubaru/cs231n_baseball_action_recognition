@@ -19,32 +19,22 @@ def get_train_args():
 
     parser.add_argument('--num_epochs',
                         type=int,
-                        default=30,
+                        default=10,
                         help='Number of epochs for which to train.')
 
-    parser.add_argument('--lr',
+    parser.add_argument('--learning_rate',
                         type=float,
-                        default=0.002,
+                        default=0.01,
                         help='Learning rate.')
 
-    parser.add_argument('--lr_step_size',
+    parser.add_argument('--decay_steps',
                         type=float,
                         default=10**4,
                         help='Learning rate scheduler step size.')
 
-    parser.add_argument('--lr_step_gamma',
+    parser.add_argument('--decay_rate',
                         type=float,
-                        default=0.5,
-                        help='Learning rate scheduler gamma.')
-
-    parser.add_argument('--l2_wd',
-                        type=float,
-                        default=0,
-                        help='L2 weight decay.')
-
-    parser.add_argument('--ema_decay',
-                        type=float,
-                        default=0.999,
+                        default=0.95,
                         help='Decay rate for exponential moving average of parameters.')
 
     parser.add_argument('--metric_name',
@@ -55,7 +45,7 @@ def get_train_args():
 
     parser.add_argument('--eval_steps',
                         type=int,
-                        default=128,
+                        default=100,
                         help='Number of steps between successive evaluations.')
 
     parser.add_argument('--max_checkpoints',
@@ -63,20 +53,15 @@ def get_train_args():
                         default=5,
                         help='Maximum number of checkpoints to keep on disk.')
 
-    parser.add_argument('--max_grad_norm',
-                        type=float,
-                        default=10.0,
-                        help='Maximum gradient norm for gradient clipping.')
-
     parser.add_argument('--optimizer',
                         type=str,
-                        default='Adamax',
-                        choices=('Adamax', 'Adadelta'),
+                        default='Adadelta',
+                        choices=('Adadelta', 'Adagrad', 'Adam', 'Adamax', 'Ftrl', 'Nadam', 'RMSprop', 'SGD'),
                         help='Name of dev metric to determine best checkpoint.')
 
     parser.add_argument('--use_lr_scheduler',
                         type=lambda s: s.lower().startswith('t'),
-                        default=False,
+                        default=True,
                         help='Whether to use learn rate scheduler.')
 
 

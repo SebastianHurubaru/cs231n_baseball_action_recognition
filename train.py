@@ -12,14 +12,12 @@ import datetime
 from args import get_train_args
 from data_pipeline import FramesDatasetBuilder
 
-from model import create_model
+from models import create_model
 
 from util import *
 
 
-
 def train_step(inputs):
-
     frames, labels = inputs
 
     with tf.GradientTape() as tape:
@@ -33,8 +31,8 @@ def train_step(inputs):
 
     return loss
 
-def eval_step(inputs):
 
+def eval_step(inputs):
     frames, labels = inputs
 
     predictions = model(frames, training=False)
@@ -43,17 +41,18 @@ def eval_step(inputs):
     dev_loss.update_state(t_loss)
     dev_accuracy.update_state(labels, predictions)
 
+
 def distributed_train_step(dataset_inputs):
     per_replica_losses = strategy.run(train_step, args=(dataset_inputs,))
     return strategy.reduce(tf.distribute.ReduceOp.SUM, per_replica_losses,
                            axis=None)
+
 
 def distributed_eval_step(dataset_inputs):
     return strategy.run(eval_step, args=(dataset_inputs,))
 
 
 def periodically_train_task():
-
     # Save the checkpoint
     save_path = checkpoint_manager.save()
     print("Saved checkpoint for step {}: {}".format(checkpoint.step.numpy(), save_path))
@@ -61,6 +60,7 @@ def periodically_train_task():
     # Display metrics on tensorboard
     tf.summary.scalar('train_loss', total_loss / num_batches, step=checkpoint.step.numpy())
     tf.summary.scalar('train_accuracy', train_accuracy.result() * 100, step=checkpoint.step.numpy())
+
 
 if __name__ == '__main__':
 
@@ -119,10 +119,28 @@ if __name__ == '__main__':
 
         # Create the model, optimizer and checkpoint under 'strategy_scope'
         model = create_model(args.model)(args=args, dynamic=True)
-        optimizer = tf.keras.optimizers.Adam()
 
+        # Create the optimizer dynamically
+        if args.use_lr_scheduler is True:
+            config = {'learning_rate': tf.keras.optimizers.schedules.serialize(
+                    tf.keras.optimizers.schedules.ExponentialDecay(
+                        initial_learning_rate=args.learning_rate,
+                        decay_rate=args.decay_rate,
+                        decay_steps=args.decay_steps
+                    )
+                )
+            }
+        else:
+            config = {'lr': args.learning_rate}
+
+        config = {'class_name': str(args.optimizer),
+                  'config': config }
+
+        optimizer = tf.keras.optimizers.get(config)
+
+        # Create the chekpoint manager
         checkpoint = tf.train.Checkpoint(step=tf.Variable(1), optimizer=optimizer, model=model)
-        checkpoint_manager = tf.train.CheckpointManager(checkpoint, run_dir, max_to_keep=3)
+        checkpoint_manager = tf.train.CheckpointManager(checkpoint, run_dir, max_to_keep=args.max_checkpoints)
 
         for epoch in range(args.num_epochs):
 
@@ -135,7 +153,7 @@ if __name__ == '__main__':
                 checkpoint.step.assign_add(1)
                 num_batches += 1
 
-                if checkpoint.step.numpy() % 100 == 0:
+                if checkpoint.step.numpy() % args.eval_steps == 0:
                     periodically_train_task()
 
             periodically_train_task()
@@ -151,6 +169,6 @@ if __name__ == '__main__':
             train_accuracy.reset_states()
             dev_accuracy.reset_states()
 
-            print(f'Finished epoch{epoch}')
+            print(f'Finished epoch {epoch} ...')
 
     exit(0)
