@@ -106,8 +106,6 @@ if __name__ == '__main__':
         dev_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(
             name='dev_accuracy')
 
-    with strategy.scope():
-
         # Create the model, optimizer and checkpoint under 'strategy_scope'
         model = create_model(args.model)(args=args, dynamic=True)
         optimizer = tf.keras.optimizers.Adam()
@@ -124,9 +122,10 @@ if __name__ == '__main__':
             for (frames, labels) in ds_train:
                 total_loss += distributed_train_step((frames, labels)).numpy()
                 step += 1
+                num_batches += 1
 
                 if step % 100:
-                    tf.summary.scalar('train_loss', train_loss, step=step)
+                    tf.summary.scalar('train_loss', total_loss / num_batches, step=step)
                     tf.summary.scalar('train_accuracy', train_accuracy.result() * 100, step=step)
 
             train_loss = total_loss / num_batches
