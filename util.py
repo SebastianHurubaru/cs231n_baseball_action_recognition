@@ -26,4 +26,3 @@ def configure_gpus():
             # Memory growth must be set before GPUs have been initialized
             print(e)
 
-
