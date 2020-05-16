@@ -7,6 +7,7 @@ Author:
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
+import sys
 import datetime
 
 from args import get_train_args
@@ -169,6 +170,6 @@ if __name__ == '__main__':
             train_accuracy.reset_states()
             dev_accuracy.reset_states()
 
-            print(f'Finished epoch {epoch} ...')
+            print(f'Finished epoch {epoch+1} ...')
 
-    exit(0)
+    sys.exit(0)

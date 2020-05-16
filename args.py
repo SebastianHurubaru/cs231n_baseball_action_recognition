@@ -61,7 +61,7 @@ def get_train_args():
 
     parser.add_argument('--use_lr_scheduler',
                         type=lambda s: s.lower().startswith('t'),
-                        default=True,
+                        default=False,
                         help='Whether to use learn rate scheduler.')
 
 
