@@ -132,8 +132,7 @@ if __name__ == '__main__':
 
             # Evaluate
             for (frames, labels) in ds_dev:
-                for i in range(0, frames.shape[0], args.batch_size):
-                    distributed_eval_step((frames[i:i + args.batch_size], labels[i:i+args.batch_size]))
+                distributed_eval_step((frames, labels))
 
             tf.summary.scalar('dev_loss', dev_loss.result(), step=step)
             tf.summary.scalar('dev_accuracy', dev_accuracy.result() * 100, step=step)
