@@ -13,6 +13,7 @@ import tensorflow_datasets.public_api as tfds
 
 from util import image_show
 
+
 class VideoDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
     def __init__(self, args):
@@ -37,11 +38,13 @@ class VideoDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
             features=tfds.features.FeaturesDict({
                 "video": tfds.features.Video(
-                shape=(None, self.args.frame_height, self.args.frame_width, self.args.frame_channels),
-                encoding_format='png',
+                    shape=(None, self.args.frame_height, self.args.frame_width, self.args.frame_channels),
+                    encoding_format='png',
                     ffmpeg_extra_args=ffmpeg_extra_args),
                 # Here, labels can be of 2 distinct values.
-                "label": tfds.features.Sequence(feature=tfds.features.ClassLabel(num_classes=2)),
+                "label": tfds.features.Sequence(feature=tfds.features.Tensor(
+                    shape=(2,), dtype=tf.int32
+                )),
             }),
 
             supervised_keys=("video", "label"),
@@ -93,26 +96,25 @@ class VideoDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
             if radar_data_available is True:
 
-                radar_velocity = [0] * int(video_meta['mpegDurationSeconds'])
+                radar_velocity = [[1, 0]] * int(video_meta['mpegDurationSeconds'])
 
                 # recover new radar event from the radar velocity overlay
                 radarOverlays = video_meta['transcodeConfig']['radarOverlaySet']
 
                 for overlay in radarOverlays:
                     assert ('contentHash' in overlay) or (
-                                'overlayContentHash' in overlay), "ERR overlay unexpected " + str(overlay)
+                            'overlayContentHash' in overlay), "ERR overlay unexpected " + str(overlay)
 
                     contentHash = overlay.get('contentHash', overlay.get('overlayContentHash', ''))
                     slotStatus = json.loads(contentHash)
 
                     active = list(filter(lambda x: slotStatus[1][x] is True, range(len(slotStatus[1]))))
-                    if(len(active) > 0):
-
+                    if (len(active) > 0):
                         # Get the velocity at each time
                         t = overlay['vidTimeInSecs']
 
                         # Set label to 1 for the found timestep
-                        radar_velocity[t] = 1
+                        radar_velocity[t] = [0, 1]
 
             # Get the directory where the file is located
             current_dir = os.path.dirname(file.numpy().decode('utf-8'))
@@ -126,7 +128,8 @@ class VideoDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
         # Keep only the frames corresponding to the integer number of seconds
         frames = tf.reshape(frames[:len(labels) * self.args.frames_per_second],
-                            [-1, self.args.frames_per_second, self.args.frame_height, self.args.frame_width, self.args.frame_channels])
+                            [-1, self.args.frames_per_second, self.args.frame_height, self.args.frame_width,
+                             self.args.frame_channels])
 
         frames = tf.cast(frames, tf.float32) / 255.
         return (frames, labels)
@@ -161,10 +164,10 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
             features=tfds.features.FeaturesDict({
                 "frames": tfds.features.Tensor(
-                shape=(self.args.frames_per_second, self.args.frame_height, self.args.frame_width, self.args.frame_channels),
+                    shape=(self.args.frames_per_second, self.args.frame_height, self.args.frame_width,
+                           self.args.frame_channels),
                     dtype=tf.float32),
-                # Here, labels can be of 2 distinct values.
-                "label": tfds.features.ClassLabel(num_classes=2),
+                "label": tfds.features.Tensor(shape=(2,), dtype=tf.int32),
             }),
 
             supervised_keys=("frames", "label"),
@@ -204,15 +207,12 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
     def _generate_examples(self, split):
 
         video_ds = self.video_ds_builder.as_dataset(split=split, as_supervised=True) \
-                .map(self.video_ds_builder._normalize_frames,
-                     num_parallel_calls=tf.data.experimental.AUTOTUNE)
+            .map(self.video_ds_builder._normalize_frames,
+                 num_parallel_calls=tf.data.experimental.AUTOTUNE)
 
         for index, (video, labels) in enumerate(video_ds):
             for second in range(video.shape[0]):
-
                 yield f"{index}_{second}", {
                     'frames': video[second],
                     'label': labels[second]
                 }
-
-

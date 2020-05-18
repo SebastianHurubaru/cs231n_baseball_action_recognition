@@ -29,7 +29,8 @@ class BaselineModel(Model):
         self.rnn = LSTM(self.args.hidden_size)
 
         self.out = Dense(2,
-                         input_shape=(self.args.hidden_size,))
+                         input_shape=(self.args.hidden_size,),
+                         activation='softmax')
 
         self.dropout = Dropout(self.args.drop_prob)
 

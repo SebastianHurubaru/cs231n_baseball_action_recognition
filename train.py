@@ -28,7 +28,7 @@ def train_step(inputs):
     gradients = tape.gradient(loss, model.trainable_variables)
     optimizer.apply_gradients(zip(gradients, model.trainable_variables))
 
-    train_accuracy.update_state(labels, predictions)
+    [train_metric.update_state(labels, predictions) for train_metric in train_metrics]
 
     return loss
 
@@ -40,7 +40,7 @@ def eval_step(inputs):
     t_loss = loss_object(labels, predictions)
 
     dev_loss.update_state(t_loss)
-    dev_accuracy.update_state(labels, predictions)
+    [dev_metric.update_state(labels, predictions) for dev_metric in dev_metrics]
 
 
 def distributed_train_step(dataset_inputs):
@@ -60,7 +60,8 @@ def periodically_train_task():
 
     # Display metrics on tensorboard
     tf.summary.scalar('train_loss', total_loss / num_batches, step=checkpoint.step.numpy())
-    tf.summary.scalar('train_accuracy', train_accuracy.result() * 100, step=checkpoint.step.numpy())
+    [tf.summary.scalar(train_metric.name, train_metric.result() * 100, step=checkpoint.step.numpy()) for train_metric in train_metrics]
+
 
 
 if __name__ == '__main__':
@@ -101,9 +102,7 @@ if __name__ == '__main__':
     with strategy.scope():
 
         # Create model loss
-        loss_object = tf.keras.losses.SparseCategoricalCrossentropy(from_logits=True,
-                                                                    reduction=tf.keras.losses.Reduction.NONE)
-
+        loss_object = tf.keras.losses.BinaryCrossentropy(reduction=tf.keras.losses.Reduction.NONE)
 
         def compute_loss(labels, predictions):
             per_example_loss = loss_object(labels, predictions)
@@ -113,10 +112,21 @@ if __name__ == '__main__':
         # define the metrics
         dev_loss = tf.keras.metrics.Mean(name='dev_loss')
 
-        train_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(
-            name='train_accuracy')
-        dev_accuracy = tf.keras.metrics.SparseCategoricalAccuracy(
-            name='dev_accuracy')
+        train_metrics = [
+            tf.keras.metrics.CategoricalCrossentropy(name='train_accuracy'),
+            tf.keras.metrics.Recall(name='train_recall_class_0', class_id=0),
+            tf.keras.metrics.Recall(name='train_recall_class_1', class_id=1),
+            tf.keras.metrics.Precision(name='train_precision_class_0', class_id=0),
+            tf.keras.metrics.Precision(name='train_precision_class_1', class_id=1)
+        ]
+
+        dev_metrics = [
+            tf.keras.metrics.CategoricalCrossentropy(name='dev_accuracy'),
+            tf.keras.metrics.Recall(name='dev_recall_class_0', class_id=0),
+            tf.keras.metrics.Recall(name='dev_recall_class_1', class_id=1),
+            tf.keras.metrics.Precision(name='dev_precision_class_0', class_id=0),
+            tf.keras.metrics.Precision(name='dev_precision_class_1', class_id=1)
+        ]
 
         # Create the model, optimizer and checkpoint under 'strategy_scope'
         model = create_model(args.model)(args=args, dynamic=True)
@@ -139,7 +149,7 @@ if __name__ == '__main__':
 
         optimizer = tf.keras.optimizers.get(config)
 
-        # Create the chekpoint manager
+        # Create the checkpoint manager
         checkpoint = tf.train.Checkpoint(step=tf.Variable(1), optimizer=optimizer, model=model)
         checkpoint_manager = tf.train.CheckpointManager(checkpoint, run_dir, max_to_keep=args.max_checkpoints)
 
@@ -164,11 +174,10 @@ if __name__ == '__main__':
                 distributed_eval_step((frames, labels))
 
             tf.summary.scalar('dev_loss', dev_loss.result(), step=checkpoint.step.numpy())
-            tf.summary.scalar('dev_accuracy', dev_accuracy.result() * 100, step=checkpoint.step.numpy())
+            [tf.summary.scalar(dev_metric.name, dev_metric.result() * 100, step=checkpoint.step.numpy()) for dev_metric in dev_metrics]
 
             dev_loss.reset_states()
-            train_accuracy.reset_states()
-            dev_accuracy.reset_states()
+            [metric.reset_states() for metric in train_metrics + dev_metrics]
 
             print(f'Finished epoch {epoch+1} ...')
 
