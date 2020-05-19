@@ -24,7 +24,7 @@ def get_train_args():
 
     parser.add_argument('--learning_rate',
                         type=float,
-                        default=0.01,
+                        default=0.001,
                         help='Learning rate.')
 
     parser.add_argument('--decay_steps',
@@ -94,6 +94,10 @@ def add_common_args(parser):
                         type=str,
                         default='./data')
 
+    parser.add_argument('--temp_proc_dir',
+                        type=str,
+                        default='/home/shurubaru/tensorflow_datasets/videos_to_frames')
+
     parser.add_argument('--dataset_version',
                         type=str,
                         default='0.0.1')
@@ -104,7 +108,7 @@ def add_common_args(parser):
 
     parser.add_argument('--frames_per_second',
                         type=int,
-                        default='10')
+                        default='60')
 
     parser.add_argument('--frame_height',
                         type=int,
@@ -154,13 +158,13 @@ def add_train_test_args(parser):
 
     parser.add_argument('--batch_size',
                         type=int,
-                        default=64,
+                        default=8,
                         help='Batch size per GPU. Scales automatically when \
                                   multiple GPUs are available.')
 
     parser.add_argument('--hidden_size',
                         type=int,
-                        default=300,
+                        default=1024,
                         help='Number of features in the hidden layers.')
 
     parser.add_argument('--drop_prob',

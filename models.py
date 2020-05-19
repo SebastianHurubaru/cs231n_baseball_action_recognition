@@ -18,7 +18,7 @@ class BaselineModel(Model):
 
         self.args = args
 
-        self.inception = InceptionV3(weights='imagenet',
+        self.inception = InceptionV3(weights=None,
                                      input_shape=(self.args.frame_width,
                                                   self.args.frame_height,
                                                   self.args.frame_channels),
