@@ -9,6 +9,7 @@ import tensorflow_datasets as tfds
 
 import sys
 import datetime
+from json import dumps
 
 from args import get_train_args
 from data_pipeline import FramesDatasetBuilder
@@ -69,14 +70,18 @@ if __name__ == '__main__':
     args = get_train_args()
 
     tf.debugging.set_log_device_placement(args.log_device_placement)
-
     configure_gpus()
 
     # Setup the output dir
     run_dir = args.save_dir + '_' + args.name + '_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    writer = tf.summary.create_file_writer(run_dir)
+    writer.set_as_default()
+
+    log = get_logger(run_dir, args.name)
+    log.info(f'Args: {dumps(vars(args), indent=4, sort_keys=True)}')
 
     # Setup the frames data
-    builder = FramesDatasetBuilder(args=args)
+    builder = FramesDatasetBuilder(args=args, log=log)
     builder.download_and_prepare(
         download_config=tfds.download.DownloadConfig(
             download_mode=tfds.core.download.GenerateMode.REUSE_DATASET_IF_EXISTS,
@@ -96,9 +101,6 @@ if __name__ == '__main__':
     ds_train = strategy.experimental_distribute_dataset(dataset=ds_train)
     ds_dev = strategy.experimental_distribute_dataset(dataset=ds_dev)
 
-    writer = tf.summary.create_file_writer(run_dir)
-    writer.set_as_default()
-
     with strategy.scope():
 
         # Create model loss
@@ -113,7 +115,7 @@ if __name__ == '__main__':
         dev_loss = tf.keras.metrics.Mean(name='dev_loss')
 
         train_metrics = [
-            tf.keras.metrics.CategoricalCrossentropy(name='train_accuracy'),
+            tf.keras.metrics.CategoricalAccuracy(name='train_accuracy'),
             tf.keras.metrics.Recall(name='train_recall_class_0', class_id=0),
             tf.keras.metrics.Recall(name='train_recall_class_1', class_id=1),
             tf.keras.metrics.Precision(name='train_precision_class_0', class_id=0),
@@ -121,7 +123,7 @@ if __name__ == '__main__':
         ]
 
         dev_metrics = [
-            tf.keras.metrics.CategoricalCrossentropy(name='dev_accuracy'),
+            tf.keras.metrics.CategoricalAccuracy(name='dev_accuracy'),
             tf.keras.metrics.Recall(name='dev_recall_class_0', class_id=0),
             tf.keras.metrics.Recall(name='dev_recall_class_1', class_id=1),
             tf.keras.metrics.Precision(name='dev_precision_class_0', class_id=0),

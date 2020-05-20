@@ -108,17 +108,21 @@ def add_common_args(parser):
 
     parser.add_argument('--frames_per_second',
                         type=int,
-                        default='60')
+                        default='30')
 
     parser.add_argument('--frame_height',
                         type=int,
-                        default='75')
+                        default='720')
 
     parser.add_argument('--frame_width',
                         type=int,
-                        default='75')
+                        default='1280')
 
     parser.add_argument('--frame_channels',
+                        type=int,
+                        default='1')
+
+    parser.add_argument('--timesteps_to_keep',
                         type=int,
                         default='3')
 
@@ -158,7 +162,7 @@ def add_train_test_args(parser):
 
     parser.add_argument('--batch_size',
                         type=int,
-                        default=8,
+                        default=16,
                         help='Batch size per GPU. Scales automatically when \
                                   multiple GPUs are available.')
 

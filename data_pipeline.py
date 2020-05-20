@@ -9,16 +9,22 @@ import tensorflow as tf
 import os
 import json
 
+import numpy as np
+
 import tensorflow_datasets.public_api as tfds
+
+from util import get_logger
 
 from util import image_show
 
 
 class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
-    def __init__(self, args):
+    def __init__(self, args, log):
 
         self.args = args
+
+        self.log = log
 
         self.VERSION = tfds.core.Version(self.args.dataset_version)
         self.MANUAL_DOWNLOAD_INSTRUCTIONS = "Dataset already downloaded manually"
@@ -87,9 +93,12 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
             radar_velocity = None
 
+            keep_index = None
+
             if radar_data_available is True:
 
                 radar_velocity = [[1, 0]] * int(video_meta['mpegDurationSeconds'])
+                keep_index = np.asarray([False] * int(video_meta['mpegDurationSeconds']))
 
                 # recover new radar event from the radar velocity overlay
                 radarOverlays = video_meta['transcodeConfig']['radarOverlaySet']
@@ -108,36 +117,47 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
                         # Set label to 1 for the found timestep
                         radar_velocity[t] = [0, 1]
+                        keep_index[t-self.args.timesteps_to_keep:t] = True
+                        keep_index[t:t + self.args.timesteps_to_keep] = True
 
             # Get the directory where the file is located
             current_dir = os.path.dirname(file.numpy().decode('utf-8'))
 
             # Call first ffmpeg to save all frames on disk
             _, current_dir_name = os.path.split(current_dir)
-            target_dir = os.path.join(self.args.temp_proc_dir, current_dir_name)
 
+            target_dir = os.path.join(
+                f"{self.args.temp_proc_dir}_{self.args.frames_per_second}x{self.args.frame_width}x{self.args.frame_height}x{self.args.frame_channels}",
+                current_dir_name)
+
+            # Do not run ffmpeg if already run
             if not os.path.exists(target_dir):
                 os.makedirs(target_dir)
 
-            command = " ".join([
-                'ffmpeg',
-                '-i', os.path.join(current_dir, video_meta['mpegFilename']),
-                '-s', f'{self.args.frame_width}x{self.args.frame_height}',
-                '-vf', f'fps={self.args.frames_per_second}',
-                os.path.join(target_dir, '%d.jpg')
-            ])
+                command = " ".join([
+                    'ffmpeg',
+                    '-i', os.path.join(current_dir, video_meta['mpegFilename']),
+                    '-s', f'{self.args.frame_width}x{self.args.frame_height}',
+                    '-vf', f'fps={self.args.frames_per_second}',
+                    '-vf hue=s=0' if self.args.frame_channels == 1 else '',
+                    os.path.join(target_dir, '%d.jpg')
+                ])
 
-            os.system(command)
+                os.system(command)
+
+            self.log.info(f"Processing video {video_meta['mpegFilename']}")
 
             prev_frame_index = 1
             for t in range(int(video_meta['mpegDurationSeconds'])):
 
                 current_frame_index = (t+1) * self.args.frames_per_second
-                frame = [os.path.join(target_dir, f'{frame}.jpg') for frame in range(prev_frame_index, current_frame_index+1)]
 
-                yield f"{video_meta['mpegFilename']}_{t}", {
-                    'frame': frame,
-                    'label': radar_velocity[t]
-                }
+                if keep_index[t]:
+                    frame = [os.path.join(target_dir, f'{frame}.jpg') for frame in range(prev_frame_index, current_frame_index+1)]
+
+                    yield f"{video_meta['mpegFilename']}_{t}", {
+                        'frame': frame,
+                        'label': radar_velocity[t]
+                    }
 
                 prev_frame_index = current_frame_index + 1
