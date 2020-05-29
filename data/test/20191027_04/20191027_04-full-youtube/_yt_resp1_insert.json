@@ -1,0 +1,50 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/jtxs41mSE5NwuFHcnoXXi57rYY0\"", 
+  "id": "v1NhPBZl0kU", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-27T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultLanguage": "en", 
+    "description": "#JackBall\n20191027_04\nsidelinehd.com/game-20191027_04", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "#JackBall\n20191027_04\nsidelinehd.com/game-20191027_04", 
+      "title": "20191027_04-full-vid-NorCal_Storm_JackBall.mp4"
+    }, 
+    "publishedAt": "2019-10-29T05:35:00.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/v1NhPBZl0kU/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/v1NhPBZl0kU/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/v1NhPBZl0kU/mqdefault.jpg", 
+        "width": 320
+      }
+    }, 
+    "title": "20191027_04-full-vid-NorCal_Storm_JackBall.mp4"
+  }, 
+  "status": {
+    "embeddable": false, 
+    "license": "youtube", 
+    "privacyStatus": "unlisted", 
+    "publicStatsViewable": true, 
+    "uploadStatus": "uploaded"
+  }
+}

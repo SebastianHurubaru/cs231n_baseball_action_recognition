@@ -1,0 +1,50 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/fq06BX-cFR0deGb4Ufqsuwe5EwI\"", 
+  "id": "GigOGWF34gU", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-26T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultLanguage": "en", 
+    "description": "#JackBall\n20191026_03\nsidelinehd.com/game-20191026_03", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "#JackBall\n20191026_03\nsidelinehd.com/game-20191026_03", 
+      "title": "20191026_03-full-vid-Universal_Concord_JackBall.mp4"
+    }, 
+    "publishedAt": "2019-10-27T13:29:49.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/GigOGWF34gU/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/GigOGWF34gU/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/GigOGWF34gU/mqdefault.jpg", 
+        "width": 320
+      }
+    }, 
+    "title": "20191026_03-full-vid-Universal_Concord_JackBall.mp4"
+  }, 
+  "status": {
+    "embeddable": false, 
+    "license": "youtube", 
+    "privacyStatus": "unlisted", 
+    "publicStatsViewable": true, 
+    "uploadStatus": "uploaded"
+  }
+}

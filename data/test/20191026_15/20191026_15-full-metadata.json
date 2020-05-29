@@ -1,0 +1,1878 @@
+{
+  "gameId": "20191026_15", 
+  "gpsAlt": -28.038722, 
+  "gpsFix": 3, 
+  "gpsLat": 37.554567, 
+  "gpsLong": -121.962623, 
+  "gpsTimestamp": 1572142430039, 
+  "mpegBitrate": "9327", 
+  "mpegCodec": "h264", 
+  "mpegDurationSeconds": 3652.46, 
+  "mpegDurationString": "01:00:52.46", 
+  "mpegEstimatedFrames": 109464, 
+  "mpegFilename": "20191026_15-full-vid-California_Burlingame_JackBall.mp4", 
+  "mpegFilesize": 4406340838, 
+  "mpegFps": 29.97, 
+  "mpegHeight": "720", 
+  "mpegWidth": "1280", 
+  "rawVidMetadata": {
+    "GPV-0123_00.MP4": {
+      "filename": "GPV-0123_00.MP4", 
+      "gpsAlt": -28.038722, 
+      "gpsFix": 3, 
+      "gpsLat": 37.554567, 
+      "gpsLong": -121.962623, 
+      "gpsPrettyTime": "2019-10-27 02:13:35.39 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1572142415039, 
+      "mpegBitrate": "29968", 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 1062.08, 
+      "mpegDurationString": "00:17:42.08", 
+      "mpegEstimatedFrames": 31830, 
+      "mpegFilename": "GPV-0123_00.MP4", 
+      "mpegFilesize": 4003373059, 
+      "mpegFps": 29.97, 
+      "mpegHeight": "1080", 
+      "mpegWidth": "1920", 
+      "stillFrameFilename": "GPV-0123_00.jpg"
+    }, 
+    "GPV-0123_01.MP4": {
+      "filename": "GPV-0123_01.MP4", 
+      "gpsAlt": -17.833412, 
+      "gpsFix": 3, 
+      "gpsLat": 37.554583, 
+      "gpsLong": -121.96252, 
+      "gpsPrettyTime": "2019-10-27 02:31:17.90 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1572143477090, 
+      "mpegBitrate": "29968", 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 1062.06, 
+      "mpegDurationString": "00:17:42.06", 
+      "mpegEstimatedFrames": 31829, 
+      "mpegFilename": "GPV-0123_01.MP4", 
+      "mpegFilesize": 4003363268, 
+      "mpegFps": 29.97, 
+      "mpegHeight": "1080", 
+      "mpegWidth": "1920", 
+      "stillFrameFilename": "GPV-0123_01.jpg"
+    }, 
+    "GPV-0123_02.MP4": {
+      "filename": "GPV-0123_02.MP4", 
+      "gpsAlt": -17.559056, 
+      "gpsFix": 3, 
+      "gpsLat": 37.554583, 
+      "gpsLong": -121.962581, 
+      "gpsPrettyTime": "2019-10-27 02:48:59.140 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1572144539140, 
+      "mpegBitrate": "29968", 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 1062.06, 
+      "mpegDurationString": "00:17:42.06", 
+      "mpegEstimatedFrames": 31829, 
+      "mpegFilename": "GPV-0123_02.MP4", 
+      "mpegFilesize": 4003419752, 
+      "mpegFps": 29.97, 
+      "mpegHeight": "1080", 
+      "mpegWidth": "1920", 
+      "stillFrameFilename": "GPV-0123_02.jpg"
+    }, 
+    "GPV-0123_03.MP4": {
+      "filename": "GPV-0123_03.MP4", 
+      "gpsAlt": -20.622667, 
+      "gpsFix": 3, 
+      "gpsLat": 37.554582, 
+      "gpsLong": -121.962606, 
+      "gpsPrettyTime": "2019-10-27 03:06:41.189 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1572145601189, 
+      "mpegBitrate": "29970", 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 493.23, 
+      "mpegDurationString": "00:08:13.23", 
+      "mpegEstimatedFrames": 14782, 
+      "mpegFilename": "GPV-0123_03.MP4", 
+      "mpegFilesize": 1859325324, 
+      "mpegFps": 29.97, 
+      "mpegHeight": "1080", 
+      "mpegWidth": "1920", 
+      "stillFrameFilename": "GPV-0123_03.jpg"
+    }
+  }, 
+  "transcodeCommandLine": "melt \\\n\\\n   '/root/sbot/vidfiles/scene_raw/20191026_15/GPV-0123_00.MP4' in=449 \\\n             -attach crop use_profile=1 right=232 left=50 top=118 bottom=41 \\\n   '/root/sbot/vidfiles/scene_raw/20191026_15/GPV-0123_01.MP4' \\\n             -attach crop use_profile=1 right=232 left=50 top=118 bottom=41 \\\n   '/root/sbot/vidfiles/scene_raw/20191026_15/GPV-0123_02.MP4' \\\n             -attach crop use_profile=1 right=232 left=50 top=118 bottom=41 \\\n   '/root/sbot/vidfiles/scene_raw/20191026_15/GPV-0123_03.MP4' out=14325.0 \\\n             -attach crop use_profile=1 right=232 left=50 top=118 bottom=41 \\\n\\\n   '/root/sbot/assets/shd1-screen-grey-on-green-1920.png' out=120.0 \\\n             -mix 25 -mixer luma -mixer mix:-1 \\\n\\\n     -attach-track watermark:\"/tmp/titleCard/titleCardIcons.png\"  in=0 out=149.0 \\\n\\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=155 out=1054  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=1059 out=1958  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=1963 out=2862  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=2867 out=3766  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=3771 out=4670  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=4675 out=5574  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=5579 out=6478  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=6483 out=7382  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=7387 out=8286  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=8291 out=9190  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=9195 out=10094  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=10099 out=10998  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=11003 out=11902  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=11907 out=12806  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=12811 out=13710  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=13715 out=14614  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=14619 out=15518  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=15523 out=16422  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=16427 out=17326  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=17331 out=18230  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=18235 out=19134  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=19139 out=20038  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=20043 out=20942  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=20947 out=21846  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=21851 out=22750  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=22755 out=23654  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=23659 out=24558  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=24563 out=25462  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=25467 out=26366  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=26371 out=27270  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=27275 out=28174  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=28179 out=29078  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=29083 out=29982  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=29987 out=30886  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=30891 out=31790  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=31795 out=32694  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=32699 out=33598  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=33603 out=34502  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=34507 out=35406  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=35411 out=36310  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=36315 out=37214  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=37219 out=38118  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=38123 out=39022  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=39027 out=39926  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=39931 out=40830  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=40835 out=41734  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=41739 out=42638  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=42643 out=43542  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=43547 out=44446  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=44451 out=45350  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=45355 out=46254  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=46259 out=47158  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=47163 out=48062  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=48067 out=48966  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=48971 out=49870  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=49875 out=50774  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=50779 out=51678  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=51683 out=52582  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=52587 out=53486  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=53491 out=54390  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=54395 out=55294  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=55299 out=56198  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=56203 out=57102  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=57107 out=58006  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=58011 out=58910  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=58915 out=59814  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=59819 out=60718  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=60723 out=61622  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=61627 out=62526  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=62531 out=63430  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=63435 out=64334  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=64339 out=65238  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=65243 out=66142  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=66147 out=67046  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=67051 out=67950  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=67955 out=68854  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=68859 out=69758  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=69763 out=70662  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=70667 out=71566  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=71571 out=72470  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=72475 out=73374  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=73379 out=74278  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=74283 out=75182  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=75187 out=76086  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=76091 out=76990  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=76995 out=77894  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=77899 out=78798  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=78803 out=79702  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=79707 out=80606  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=80611 out=81510  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=81515 out=82414  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=82419 out=83318  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=83323 out=84222  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=84227 out=85126  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=85131 out=86030  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=86035 out=86934  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=86939 out=87838  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=87843 out=88742  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=88747 out=89646  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=89651 out=90550  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=90555 out=91454  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=91459 out=92358  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=92363 out=93262  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=93267 out=94166  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=94171 out=95070  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=95075 out=95974  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=95979 out=96878  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=96883 out=97782  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=97787 out=98686  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=98691 out=99590  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=99595 out=100494  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=100499 out=101398  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=101403 out=102302  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=102307 out=103206  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=103211 out=104110  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=104115 out=105014  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=105019 out=105918  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"  in=105923 out=106822  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"  in=106827 out=107726  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"  in=107731 out=108630  \\\n     -attach-track watermark:\"/root/sbot/dumpster/logo-overlay/logo-bgs.png\"  in=108635 out=109342  \\\n\\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=150.0 out=2756.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=2757.0 out=2816.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0002.png\"  in=2817.0 out=2846.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0003.png\"  in=2847.0 out=2936.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0004.png\"  in=2937.0 out=2966.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0005.png\"  in=2967.0 out=3116.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0006.png\"  in=3117.0 out=3236.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=3237.0 out=3296.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=3297.0 out=5723.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=5724.0 out=5783.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0010.png\"  in=5784.0 out=5813.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0011.png\"  in=5814.0 out=5843.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0012.png\"  in=5844.0 out=6083.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0013.png\"  in=6084.0 out=6113.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=6114.0 out=7162.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0015.png\"  in=7163.0 out=7192.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0016.png\"  in=7193.0 out=7462.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=7463.0 out=7521.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=7522.0 out=9619.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=9620.0 out=9679.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0010.png\"  in=9680.0 out=9709.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0021.png\"  in=9710.0 out=9979.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=9980.0 out=10339.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0023.png\"  in=10340.0 out=10369.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0024.png\"  in=10370.0 out=10638.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=10639.0 out=10698.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=10699.0 out=12556.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=12557.0 out=12616.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0028.png\"  in=12617.0 out=12646.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0029.png\"  in=12647.0 out=12916.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=12917.0 out=14684.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0010.png\"  in=14685.0 out=14714.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0021.png\"  in=14715.0 out=14984.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=14985.0 out=15044.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=15045.0 out=17771.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=17772.0 out=17831.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0015.png\"  in=17832.0 out=17861.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0016.png\"  in=17862.0 out=18131.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=18132.0 out=18760.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=18761.0 out=18790.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0040.png\"  in=18791.0 out=19060.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=19061.0 out=20768.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=20769.0 out=20798.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0043.png\"  in=20799.0 out=21068.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=21069.0 out=22836.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0010.png\"  in=22837.0 out=22866.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0021.png\"  in=22867.0 out=23136.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=23137.0 out=23436.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=23437.0 out=23466.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0040.png\"  in=23467.0 out=23735.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=23736.0 out=24784.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0051.png\"  in=24785.0 out=24814.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0052.png\"  in=24815.0 out=25084.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=25085.0 out=25144.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=25145.0 out=27601.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=27602.0 out=27661.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0056.png\"  in=27662.0 out=27691.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0057.png\"  in=27692.0 out=27961.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=27962.0 out=28231.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=28232.0 out=28261.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0043.png\"  in=28262.0 out=28381.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0061.png\"  in=28382.0 out=28411.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0062.png\"  in=28412.0 out=28530.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0063.png\"  in=28531.0 out=28680.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=28681.0 out=28740.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=28741.0 out=31498.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=31499.0 out=31557.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=31558.0 out=31587.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0043.png\"  in=31588.0 out=31857.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=31858.0 out=31947.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0051.png\"  in=31948.0 out=31977.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0052.png\"  in=31978.0 out=32247.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=32248.0 out=32816.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0073.png\"  in=32817.0 out=32846.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0074.png\"  in=32847.0 out=33116.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=33117.0 out=33535.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=33536.0 out=33565.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0040.png\"  in=33566.0 out=33835.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=33836.0 out=34554.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0079.png\"  in=34555.0 out=34584.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0080.png\"  in=34585.0 out=34854.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=34855.0 out=34914.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=34915.0 out=39020.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=39021.0 out=39080.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=39081.0 out=39110.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0040.png\"  in=39111.0 out=39380.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=39381.0 out=39499.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0010.png\"  in=39500.0 out=39529.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0021.png\"  in=39530.0 out=39799.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=39800.0 out=39949.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0051.png\"  in=39950.0 out=39979.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0052.png\"  in=39980.0 out=40249.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=40250.0 out=41328.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=41329.0 out=41358.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0043.png\"  in=41359.0 out=41627.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=41628.0 out=42287.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0051.png\"  in=42288.0 out=42317.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0052.png\"  in=42318.0 out=42586.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=42587.0 out=42646.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=42647.0 out=45733.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=45734.0 out=45793.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0101.png\"  in=45794.0 out=45823.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0102.png\"  in=45824.0 out=46093.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=46094.0 out=46123.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0079.png\"  in=46124.0 out=46153.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0080.png\"  in=46154.0 out=46423.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=46424.0 out=46962.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0051.png\"  in=46963.0 out=46992.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0052.png\"  in=46993.0 out=47262.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=47263.0 out=47591.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0110.png\"  in=47592.0 out=47621.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0111.png\"  in=47622.0 out=47891.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=47892.0 out=47951.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0051.png\"  in=47952.0 out=47981.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0052.png\"  in=47982.0 out=48251.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=48252.0 out=48311.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=48312.0 out=55533.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=55534.0 out=55593.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0028.png\"  in=55594.0 out=55623.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0029.png\"  in=55624.0 out=55893.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=55894.0 out=56253.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0079.png\"  in=56254.0 out=56283.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0080.png\"  in=56284.0 out=56552.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=56553.0 out=56612.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=56613.0 out=58560.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=58561.0 out=58620.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0051.png\"  in=58621.0 out=58650.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0052.png\"  in=58651.0 out=58920.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=58921.0 out=59909.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0129.png\"  in=59910.0 out=59939.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0130.png\"  in=59940.0 out=60209.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=60210.0 out=61438.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0023.png\"  in=61439.0 out=61468.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0024.png\"  in=61469.0 out=61527.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0134.png\"  in=61528.0 out=61557.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0135.png\"  in=61558.0 out=61737.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0006.png\"  in=61738.0 out=61827.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=61828.0 out=61887.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=61888.0 out=64345.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=64346.0 out=64405.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0140.png\"  in=64406.0 out=64435.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0141.png\"  in=64436.0 out=64704.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=64705.0 out=65304.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=65305.0 out=65334.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0043.png\"  in=65335.0 out=65603.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=65604.0 out=66443.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0079.png\"  in=66444.0 out=66473.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0080.png\"  in=66474.0 out=66742.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=66743.0 out=66802.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=66803.0 out=68510.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=68511.0 out=68570.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=68571.0 out=68600.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0040.png\"  in=68601.0 out=68870.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=68871.0 out=68930.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=68931.0 out=74145.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=74146.0 out=74205.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=74206.0 out=74235.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0043.png\"  in=74236.0 out=74504.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=74505.0 out=74684.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0159.png\"  in=74685.0 out=74714.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0160.png\"  in=74715.0 out=74834.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0161.png\"  in=74835.0 out=74864.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0162.png\"  in=74865.0 out=74984.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0163.png\"  in=74985.0 out=75134.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=75135.0 out=75763.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0165.png\"  in=75764.0 out=75793.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0166.png\"  in=75794.0 out=75913.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0167.png\"  in=75914.0 out=75943.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0168.png\"  in=75944.0 out=76063.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0169.png\"  in=76064.0 out=76213.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=76214.0 out=76363.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0165.png\"  in=76364.0 out=76393.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0166.png\"  in=76394.0 out=76483.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0167.png\"  in=76484.0 out=76512.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0174.png\"  in=76513.0 out=76542.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0175.png\"  in=76543.0 out=76662.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0176.png\"  in=76663.0 out=76782.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0177.png\"  in=76783.0 out=76812.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=76813.0 out=76872.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0179.png\"  in=76873.0 out=76902.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0180.png\"  in=76903.0 out=77172.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=77173.0 out=77771.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0179.png\"  in=77772.0 out=77801.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0180.png\"  in=77802.0 out=78071.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=78072.0 out=78371.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0165.png\"  in=78372.0 out=78401.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0166.png\"  in=78402.0 out=78461.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0187.png\"  in=78462.0 out=78491.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0188.png\"  in=78492.0 out=78670.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0189.png\"  in=78671.0 out=78760.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=78761.0 out=79030.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0191.png\"  in=79031.0 out=79060.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0192.png\"  in=79061.0 out=79330.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=79331.0 out=79390.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=79391.0 out=81488.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=81489.0 out=81547.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0196.png\"  in=81548.0 out=81577.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0197.png\"  in=81578.0 out=81847.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=81848.0 out=82027.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0199.png\"  in=82028.0 out=82057.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0200.png\"  in=82058.0 out=82327.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=82328.0 out=82506.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0196.png\"  in=82507.0 out=82536.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0197.png\"  in=82537.0 out=82806.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=82807.0 out=82896.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0205.png\"  in=82897.0 out=82926.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0206.png\"  in=82927.0 out=83196.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=83197.0 out=83286.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0208.png\"  in=83287.0 out=83316.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0209.png\"  in=83317.0 out=83585.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=83586.0 out=83645.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0110.png\"  in=83646.0 out=83675.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0111.png\"  in=83676.0 out=83945.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=83946.0 out=84155.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0196.png\"  in=84156.0 out=84185.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0197.png\"  in=84186.0 out=84455.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=84456.0 out=85503.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0159.png\"  in=85504.0 out=85533.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0160.png\"  in=85534.0 out=85803.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=85804.0 out=87122.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0196.png\"  in=87123.0 out=87152.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0197.png\"  in=87153.0 out=87422.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=87423.0 out=88500.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=88501.0 out=88530.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0040.png\"  in=88531.0 out=88800.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=88801.0 out=88950.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0226.png\"  in=88951.0 out=88980.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0227.png\"  in=88981.0 out=89250.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=89251.0 out=89999.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=90000.0 out=90029.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0043.png\"  in=90030.0 out=90299.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=90300.0 out=90329.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0232.png\"  in=90330.0 out=90359.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0233.png\"  in=90360.0 out=90628.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=90629.0 out=90838.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0196.png\"  in=90839.0 out=90868.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0197.png\"  in=90869.0 out=91138.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=91139.0 out=91378.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0205.png\"  in=91379.0 out=91408.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0206.png\"  in=91409.0 out=91677.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=91678.0 out=91857.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0205.png\"  in=91858.0 out=91887.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0206.png\"  in=91888.0 out=92157.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=92158.0 out=92636.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0205.png\"  in=92637.0 out=92666.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0206.png\"  in=92667.0 out=92756.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0246.png\"  in=92757.0 out=92786.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0247.png\"  in=92787.0 out=92876.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0248.png\"  in=92877.0 out=92906.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0249.png\"  in=92907.0 out=92936.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0250.png\"  in=92937.0 out=93056.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0251.png\"  in=93057.0 out=93176.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=93177.0 out=93296.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0196.png\"  in=93297.0 out=93326.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0197.png\"  in=93327.0 out=93595.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=93596.0 out=94165.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0205.png\"  in=94166.0 out=94195.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0206.png\"  in=94196.0 out=94255.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0246.png\"  in=94256.0 out=94285.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0247.png\"  in=94286.0 out=94465.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0260.png\"  in=94466.0 out=94554.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=94555.0 out=95813.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0165.png\"  in=95814.0 out=95843.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0166.png\"  in=95844.0 out=96113.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=96114.0 out=96173.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0159.png\"  in=96174.0 out=96203.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0160.png\"  in=96204.0 out=96473.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=96474.0 out=96502.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0179.png\"  in=96503.0 out=96532.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0180.png\"  in=96533.0 out=96802.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=96803.0 out=97012.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0271.png\"  in=97013.0 out=97042.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0272.png\"  in=97043.0 out=97312.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=97313.0 out=97911.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0010.png\"  in=97912.0 out=97941.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0021.png\"  in=97942.0 out=98211.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=98212.0 out=98301.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=98302.0 out=98331.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0043.png\"  in=98332.0 out=98361.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0279.png\"  in=98362.0 out=98391.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0280.png\"  in=98392.0 out=98421.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0281.png\"  in=98422.0 out=98600.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0282.png\"  in=98601.0 out=98660.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0283.png\"  in=98661.0 out=98690.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=98691.0 out=99200.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0232.png\"  in=99201.0 out=99230.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0233.png\"  in=99231.0 out=99380.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0287.png\"  in=99381.0 out=99410.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0288.png\"  in=99411.0 out=99499.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0289.png\"  in=99500.0 out=99529.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0290.png\"  in=99530.0 out=99679.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0291.png\"  in=99680.0 out=99799.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=99800.0 out=99979.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0179.png\"  in=99980.0 out=100009.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0180.png\"  in=100010.0 out=100099.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0295.png\"  in=100100.0 out=100129.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0296.png\"  in=100130.0 out=100279.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0297.png\"  in=100280.0 out=100399.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=100400.0 out=100489.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0159.png\"  in=100490.0 out=100518.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0160.png\"  in=100519.0 out=100608.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0301.png\"  in=100609.0 out=100638.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0302.png\"  in=100639.0 out=100788.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0303.png\"  in=100789.0 out=100908.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=100909.0 out=100968.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0042.png\"  in=100969.0 out=100998.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0306.png\"  in=100999.0 out=101028.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0307.png\"  in=101029.0 out=101268.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0308.png\"  in=101269.0 out=101298.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=101299.0 out=102047.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=102048.0 out=102077.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0311.png\"  in=102078.0 out=102107.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0312.png\"  in=102108.0 out=102287.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0313.png\"  in=102288.0 out=102317.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0314.png\"  in=102318.0 out=102347.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0315.png\"  in=102348.0 out=102377.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0316.png\"  in=102378.0 out=102586.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=102587.0 out=102826.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0191.png\"  in=102827.0 out=102856.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0192.png\"  in=102857.0 out=103126.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=103127.0 out=103366.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0159.png\"  in=103367.0 out=103396.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0160.png\"  in=103397.0 out=103665.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=103666.0 out=103995.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=103996.0 out=104025.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0325.png\"  in=104026.0 out=104055.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0326.png\"  in=104056.0 out=104295.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0308.png\"  in=104296.0 out=104325.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=104326.0 out=104924.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0039.png\"  in=104925.0 out=104954.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0040.png\"  in=104955.0 out=104984.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0311.png\"  in=104985.0 out=105014.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0312.png\"  in=105015.0 out=105224.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0333.png\"  in=105225.0 out=105284.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=105285.0 out=105523.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0159.png\"  in=105524.0 out=105553.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0160.png\"  in=105554.0 out=105613.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0337.png\"  in=105614.0 out=105643.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0338.png\"  in=105644.0 out=105823.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0169.png\"  in=105824.0 out=105913.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=105914.0 out=106153.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0232.png\"  in=106154.0 out=106183.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0233.png\"  in=106184.0 out=106453.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=106454.0 out=107022.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0110.png\"  in=107023.0 out=107052.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0111.png\"  in=107053.0 out=107322.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0001.png\"  in=107323.0 out=107382.0 \\\n     -attach-track watermark:\"/tmp/img_radar/radar_0000.png\"  in=107383.0 out=109342.0 \\\n\\\n   -consumer avformat:\"/root/sbot/vidfiles/scene_full/20191026_15/20191026_15-full-vid-California_Burlingame_JackBall.mp4\" \\\n     f=mp4 \\\n     movflags=+faststart \\\n     acodec=aac ar=48000 ab=384k \\\n     vcodec=libx264 progressive=1 preset=fast \\\n     threads=0 \\\n     g=15 bf=2 \\\n     width=1280 height=720 \\\n     frame_rate_num=30000 frame_rate_den=1001 \\\n     crf=15", 
+  "transcodeConfig": {
+    "brandingEndCard": "/root/sbot/assets/shd1-screen-grey-on-green-1920.png", 
+    "configTranscodeVersion": 107, 
+    "constantRateFactor": 15, 
+    "constantRateFactorOriginal": "B9", 
+    "cropSize": 0.78, 
+    "duPctPan": 26, 
+    "firstFileStartOffset": "0:15", 
+    "fpsOutput": 29.97, 
+    "gameId": "20191026_15", 
+    "heightOutput": 720, 
+    "isSkipTranscode": false, 
+    "isSkipYtUpload": false, 
+    "lastFileStopOffset": "7:58", 
+    "logoSelection": "auto", 
+    "lrPctPan": 18, 
+    "pradar": true, 
+    "preTitle": "Pool", 
+    "radarOverlaySet": [
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 5
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 92
+      }, 
+      {
+        "contentHash": "[[\"(41)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0002.png", 
+        "vidTimeInSecs": 94
+      }, 
+      {
+        "contentHash": "[[\"41\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0003.png", 
+        "vidTimeInSecs": 95
+      }, 
+      {
+        "contentHash": "[[\"41\", \"(27)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0004.png", 
+        "vidTimeInSecs": 98
+      }, 
+      {
+        "contentHash": "[[\"41\", \"27\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0005.png", 
+        "vidTimeInSecs": 99
+      }, 
+      {
+        "contentHash": "[[\"\", \"27\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0006.png", 
+        "vidTimeInSecs": 104
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 108
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 110
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 191
+      }, 
+      {
+        "contentHash": "[[\"(28)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0010.png", 
+        "vidTimeInSecs": 193
+      }, 
+      {
+        "contentHash": "[[\"28\", \"(89)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0011.png", 
+        "vidTimeInSecs": 194
+      }, 
+      {
+        "contentHash": "[[\"28\", \"89\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0012.png", 
+        "vidTimeInSecs": 195
+      }, 
+      {
+        "contentHash": "[[\"\", \"89\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0013.png", 
+        "vidTimeInSecs": 203
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 204
+      }, 
+      {
+        "contentHash": "[[\"(34)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0015.png", 
+        "vidTimeInSecs": 239
+      }, 
+      {
+        "contentHash": "[[\"34\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0016.png", 
+        "vidTimeInSecs": 240
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 249
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 251
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 321
+      }, 
+      {
+        "contentHash": "[[\"(28)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0010.png", 
+        "vidTimeInSecs": 323
+      }, 
+      {
+        "contentHash": "[[\"28\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0021.png", 
+        "vidTimeInSecs": 324
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 333
+      }, 
+      {
+        "contentHash": "[[\"(38)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0023.png", 
+        "vidTimeInSecs": 345
+      }, 
+      {
+        "contentHash": "[[\"38\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0024.png", 
+        "vidTimeInSecs": 346
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 355
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 357
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 419
+      }, 
+      {
+        "contentHash": "[[\"(29)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0028.png", 
+        "vidTimeInSecs": 421
+      }, 
+      {
+        "contentHash": "[[\"29\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0029.png", 
+        "vidTimeInSecs": 422
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 431
+      }, 
+      {
+        "contentHash": "[[\"(28)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0010.png", 
+        "vidTimeInSecs": 490
+      }, 
+      {
+        "contentHash": "[[\"28\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0021.png", 
+        "vidTimeInSecs": 491
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 500
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 502
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 593
+      }, 
+      {
+        "contentHash": "[[\"(34)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0015.png", 
+        "vidTimeInSecs": 595
+      }, 
+      {
+        "contentHash": "[[\"34\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0016.png", 
+        "vidTimeInSecs": 596
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 605
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 626
+      }, 
+      {
+        "contentHash": "[[\"25\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0040.png", 
+        "vidTimeInSecs": 627
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 636
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 693
+      }, 
+      {
+        "contentHash": "[[\"26\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0043.png", 
+        "vidTimeInSecs": 694
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 703
+      }, 
+      {
+        "contentHash": "[[\"(28)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0010.png", 
+        "vidTimeInSecs": 762
+      }, 
+      {
+        "contentHash": "[[\"28\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0021.png", 
+        "vidTimeInSecs": 763
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 772
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 782
+      }, 
+      {
+        "contentHash": "[[\"25\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0040.png", 
+        "vidTimeInSecs": 783
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 792
+      }, 
+      {
+        "contentHash": "[[\"(27)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0051.png", 
+        "vidTimeInSecs": 827
+      }, 
+      {
+        "contentHash": "[[\"27\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0052.png", 
+        "vidTimeInSecs": 828
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 837
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 839
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 921
+      }, 
+      {
+        "contentHash": "[[\"(111)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0056.png", 
+        "vidTimeInSecs": 923
+      }, 
+      {
+        "contentHash": "[[\"111\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0057.png", 
+        "vidTimeInSecs": 924
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 933
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 942
+      }, 
+      {
+        "contentHash": "[[\"26\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0043.png", 
+        "vidTimeInSecs": 943
+      }, 
+      {
+        "contentHash": "[[\"26\", \"(92)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0061.png", 
+        "vidTimeInSecs": 947
+      }, 
+      {
+        "contentHash": "[[\"26\", \"92\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0062.png", 
+        "vidTimeInSecs": 948
+      }, 
+      {
+        "contentHash": "[[\"\", \"92\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0063.png", 
+        "vidTimeInSecs": 952
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 957
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 959
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1051
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 1053
+      }, 
+      {
+        "contentHash": "[[\"26\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0043.png", 
+        "vidTimeInSecs": 1054
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1063
+      }, 
+      {
+        "contentHash": "[[\"(27)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0051.png", 
+        "vidTimeInSecs": 1066
+      }, 
+      {
+        "contentHash": "[[\"27\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0052.png", 
+        "vidTimeInSecs": 1067
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1076
+      }, 
+      {
+        "contentHash": "[[\"(40)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0073.png", 
+        "vidTimeInSecs": 1095
+      }, 
+      {
+        "contentHash": "[[\"40\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0074.png", 
+        "vidTimeInSecs": 1096
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1105
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 1119
+      }, 
+      {
+        "contentHash": "[[\"25\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0040.png", 
+        "vidTimeInSecs": 1120
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1129
+      }, 
+      {
+        "contentHash": "[[\"(37)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0079.png", 
+        "vidTimeInSecs": 1153
+      }, 
+      {
+        "contentHash": "[[\"37\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0080.png", 
+        "vidTimeInSecs": 1154
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1163
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 1165
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1302
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 1304
+      }, 
+      {
+        "contentHash": "[[\"25\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0040.png", 
+        "vidTimeInSecs": 1305
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1314
+      }, 
+      {
+        "contentHash": "[[\"(28)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0010.png", 
+        "vidTimeInSecs": 1318
+      }, 
+      {
+        "contentHash": "[[\"28\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0021.png", 
+        "vidTimeInSecs": 1319
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1328
+      }, 
+      {
+        "contentHash": "[[\"(27)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0051.png", 
+        "vidTimeInSecs": 1333
+      }, 
+      {
+        "contentHash": "[[\"27\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0052.png", 
+        "vidTimeInSecs": 1334
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1343
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 1379
+      }, 
+      {
+        "contentHash": "[[\"26\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0043.png", 
+        "vidTimeInSecs": 1380
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1389
+      }, 
+      {
+        "contentHash": "[[\"(27)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0051.png", 
+        "vidTimeInSecs": 1411
+      }, 
+      {
+        "contentHash": "[[\"27\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0052.png", 
+        "vidTimeInSecs": 1412
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1421
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 1423
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1526
+      }, 
+      {
+        "contentHash": "[[\"(94)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0101.png", 
+        "vidTimeInSecs": 1528
+      }, 
+      {
+        "contentHash": "[[\"94\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0102.png", 
+        "vidTimeInSecs": 1529
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1538
+      }, 
+      {
+        "contentHash": "[[\"(37)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0079.png", 
+        "vidTimeInSecs": 1539
+      }, 
+      {
+        "contentHash": "[[\"37\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0080.png", 
+        "vidTimeInSecs": 1540
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1549
+      }, 
+      {
+        "contentHash": "[[\"(27)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0051.png", 
+        "vidTimeInSecs": 1567
+      }, 
+      {
+        "contentHash": "[[\"27\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0052.png", 
+        "vidTimeInSecs": 1568
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1577
+      }, 
+      {
+        "contentHash": "[[\"(48)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0110.png", 
+        "vidTimeInSecs": 1588
+      }, 
+      {
+        "contentHash": "[[\"48\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0111.png", 
+        "vidTimeInSecs": 1589
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1598
+      }, 
+      {
+        "contentHash": "[[\"(27)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0051.png", 
+        "vidTimeInSecs": 1600
+      }, 
+      {
+        "contentHash": "[[\"27\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0052.png", 
+        "vidTimeInSecs": 1601
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1610
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 1612
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1853
+      }, 
+      {
+        "contentHash": "[[\"(29)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0028.png", 
+        "vidTimeInSecs": 1855
+      }, 
+      {
+        "contentHash": "[[\"29\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0029.png", 
+        "vidTimeInSecs": 1856
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1865
+      }, 
+      {
+        "contentHash": "[[\"(37)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0079.png", 
+        "vidTimeInSecs": 1877
+      }, 
+      {
+        "contentHash": "[[\"37\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0080.png", 
+        "vidTimeInSecs": 1878
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1887
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 1889
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1954
+      }, 
+      {
+        "contentHash": "[[\"(27)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0051.png", 
+        "vidTimeInSecs": 1956
+      }, 
+      {
+        "contentHash": "[[\"27\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0052.png", 
+        "vidTimeInSecs": 1957
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 1966
+      }, 
+      {
+        "contentHash": "[[\"(32)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0129.png", 
+        "vidTimeInSecs": 1999
+      }, 
+      {
+        "contentHash": "[[\"32\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0130.png", 
+        "vidTimeInSecs": 2000
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2009
+      }, 
+      {
+        "contentHash": "[[\"(38)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0023.png", 
+        "vidTimeInSecs": 2050
+      }, 
+      {
+        "contentHash": "[[\"38\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0024.png", 
+        "vidTimeInSecs": 2051
+      }, 
+      {
+        "contentHash": "[[\"38\", \"(27)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0134.png", 
+        "vidTimeInSecs": 2053
+      }, 
+      {
+        "contentHash": "[[\"38\", \"27\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0135.png", 
+        "vidTimeInSecs": 2054
+      }, 
+      {
+        "contentHash": "[[\"\", \"27\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0006.png", 
+        "vidTimeInSecs": 2060
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2063
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 2065
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2147
+      }, 
+      {
+        "contentHash": "[[\"(102)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0140.png", 
+        "vidTimeInSecs": 2149
+      }, 
+      {
+        "contentHash": "[[\"102\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0141.png", 
+        "vidTimeInSecs": 2150
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2159
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 2179
+      }, 
+      {
+        "contentHash": "[[\"26\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0043.png", 
+        "vidTimeInSecs": 2180
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2189
+      }, 
+      {
+        "contentHash": "[[\"(37)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0079.png", 
+        "vidTimeInSecs": 2217
+      }, 
+      {
+        "contentHash": "[[\"37\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0080.png", 
+        "vidTimeInSecs": 2218
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2227
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 2229
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2286
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 2288
+      }, 
+      {
+        "contentHash": "[[\"25\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0040.png", 
+        "vidTimeInSecs": 2289
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2298
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 2300
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2474
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 2476
+      }, 
+      {
+        "contentHash": "[[\"26\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0043.png", 
+        "vidTimeInSecs": 2477
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2486
+      }, 
+      {
+        "contentHash": "[[\"(45)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0159.png", 
+        "vidTimeInSecs": 2492
+      }, 
+      {
+        "contentHash": "[[\"45\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0160.png", 
+        "vidTimeInSecs": 2493
+      }, 
+      {
+        "contentHash": "[[\"45\", \"(26)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0161.png", 
+        "vidTimeInSecs": 2497
+      }, 
+      {
+        "contentHash": "[[\"45\", \"26\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0162.png", 
+        "vidTimeInSecs": 2498
+      }, 
+      {
+        "contentHash": "[[\"\", \"26\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0163.png", 
+        "vidTimeInSecs": 2502
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2507
+      }, 
+      {
+        "contentHash": "[[\"(42)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0165.png", 
+        "vidTimeInSecs": 2528
+      }, 
+      {
+        "contentHash": "[[\"42\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0166.png", 
+        "vidTimeInSecs": 2529
+      }, 
+      {
+        "contentHash": "[[\"42\", \"(25)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0167.png", 
+        "vidTimeInSecs": 2533
+      }, 
+      {
+        "contentHash": "[[\"42\", \"25\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0168.png", 
+        "vidTimeInSecs": 2534
+      }, 
+      {
+        "contentHash": "[[\"\", \"25\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0169.png", 
+        "vidTimeInSecs": 2538
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2543
+      }, 
+      {
+        "contentHash": "[[\"(42)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0165.png", 
+        "vidTimeInSecs": 2548
+      }, 
+      {
+        "contentHash": "[[\"42\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0166.png", 
+        "vidTimeInSecs": 2549
+      }, 
+      {
+        "contentHash": "[[\"42\", \"(25)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0167.png", 
+        "vidTimeInSecs": 2552
+      }, 
+      {
+        "contentHash": "[[\"42\", \"25\", \"(26)\"], [false, false, true], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0174.png", 
+        "vidTimeInSecs": 2553
+      }, 
+      {
+        "contentHash": "[[\"42\", \"25\", \"26\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0175.png", 
+        "vidTimeInSecs": 2554
+      }, 
+      {
+        "contentHash": "[[\"\", \"25\", \"26\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0176.png", 
+        "vidTimeInSecs": 2558
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"26\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0177.png", 
+        "vidTimeInSecs": 2562
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2563
+      }, 
+      {
+        "contentHash": "[[\"(44)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0179.png", 
+        "vidTimeInSecs": 2565
+      }, 
+      {
+        "contentHash": "[[\"44\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0180.png", 
+        "vidTimeInSecs": 2566
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2575
+      }, 
+      {
+        "contentHash": "[[\"(44)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0179.png", 
+        "vidTimeInSecs": 2595
+      }, 
+      {
+        "contentHash": "[[\"44\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0180.png", 
+        "vidTimeInSecs": 2596
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2605
+      }, 
+      {
+        "contentHash": "[[\"(42)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0165.png", 
+        "vidTimeInSecs": 2615
+      }, 
+      {
+        "contentHash": "[[\"42\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0166.png", 
+        "vidTimeInSecs": 2616
+      }, 
+      {
+        "contentHash": "[[\"42\", \"(71)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0187.png", 
+        "vidTimeInSecs": 2618
+      }, 
+      {
+        "contentHash": "[[\"42\", \"71\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0188.png", 
+        "vidTimeInSecs": 2619
+      }, 
+      {
+        "contentHash": "[[\"\", \"71\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0189.png", 
+        "vidTimeInSecs": 2625
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2628
+      }, 
+      {
+        "contentHash": "[[\"(43)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0191.png", 
+        "vidTimeInSecs": 2637
+      }, 
+      {
+        "contentHash": "[[\"43\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0192.png", 
+        "vidTimeInSecs": 2638
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2647
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 2649
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2719
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0196.png", 
+        "vidTimeInSecs": 2721
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0197.png", 
+        "vidTimeInSecs": 2722
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2731
+      }, 
+      {
+        "contentHash": "[[\"(47)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0199.png", 
+        "vidTimeInSecs": 2737
+      }, 
+      {
+        "contentHash": "[[\"47\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0200.png", 
+        "vidTimeInSecs": 2738
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2747
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0196.png", 
+        "vidTimeInSecs": 2753
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0197.png", 
+        "vidTimeInSecs": 2754
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2763
+      }, 
+      {
+        "contentHash": "[[\"(49)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0205.png", 
+        "vidTimeInSecs": 2766
+      }, 
+      {
+        "contentHash": "[[\"49\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0206.png", 
+        "vidTimeInSecs": 2767
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2776
+      }, 
+      {
+        "contentHash": "[[\"(51)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0208.png", 
+        "vidTimeInSecs": 2779
+      }, 
+      {
+        "contentHash": "[[\"51\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0209.png", 
+        "vidTimeInSecs": 2780
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2789
+      }, 
+      {
+        "contentHash": "[[\"(48)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0110.png", 
+        "vidTimeInSecs": 2791
+      }, 
+      {
+        "contentHash": "[[\"48\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0111.png", 
+        "vidTimeInSecs": 2792
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2801
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0196.png", 
+        "vidTimeInSecs": 2808
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0197.png", 
+        "vidTimeInSecs": 2809
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2818
+      }, 
+      {
+        "contentHash": "[[\"(45)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0159.png", 
+        "vidTimeInSecs": 2853
+      }, 
+      {
+        "contentHash": "[[\"45\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0160.png", 
+        "vidTimeInSecs": 2854
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2863
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0196.png", 
+        "vidTimeInSecs": 2907
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0197.png", 
+        "vidTimeInSecs": 2908
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2917
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 2953
+      }, 
+      {
+        "contentHash": "[[\"25\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0040.png", 
+        "vidTimeInSecs": 2954
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2963
+      }, 
+      {
+        "contentHash": "[[\"(35)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0226.png", 
+        "vidTimeInSecs": 2968
+      }, 
+      {
+        "contentHash": "[[\"35\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0227.png", 
+        "vidTimeInSecs": 2969
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 2978
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 3003
+      }, 
+      {
+        "contentHash": "[[\"26\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0043.png", 
+        "vidTimeInSecs": 3004
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3013
+      }, 
+      {
+        "contentHash": "[[\"(46)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0232.png", 
+        "vidTimeInSecs": 3014
+      }, 
+      {
+        "contentHash": "[[\"46\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0233.png", 
+        "vidTimeInSecs": 3015
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3024
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0196.png", 
+        "vidTimeInSecs": 3031
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0197.png", 
+        "vidTimeInSecs": 3032
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3041
+      }, 
+      {
+        "contentHash": "[[\"(49)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0205.png", 
+        "vidTimeInSecs": 3049
+      }, 
+      {
+        "contentHash": "[[\"49\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0206.png", 
+        "vidTimeInSecs": 3050
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3059
+      }, 
+      {
+        "contentHash": "[[\"(49)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0205.png", 
+        "vidTimeInSecs": 3065
+      }, 
+      {
+        "contentHash": "[[\"49\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0206.png", 
+        "vidTimeInSecs": 3066
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3075
+      }, 
+      {
+        "contentHash": "[[\"(49)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0205.png", 
+        "vidTimeInSecs": 3091
+      }, 
+      {
+        "contentHash": "[[\"49\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0206.png", 
+        "vidTimeInSecs": 3092
+      }, 
+      {
+        "contentHash": "[[\"49\", \"(32)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0246.png", 
+        "vidTimeInSecs": 3095
+      }, 
+      {
+        "contentHash": "[[\"49\", \"32\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0247.png", 
+        "vidTimeInSecs": 3096
+      }, 
+      {
+        "contentHash": "[[\"49\", \"32\", \"(28)\"], [false, false, true], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0248.png", 
+        "vidTimeInSecs": 3099
+      }, 
+      {
+        "contentHash": "[[\"49\", \"32\", \"28\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0249.png", 
+        "vidTimeInSecs": 3100
+      }, 
+      {
+        "contentHash": "[[\"\", \"32\", \"28\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0250.png", 
+        "vidTimeInSecs": 3101
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"28\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0251.png", 
+        "vidTimeInSecs": 3105
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3109
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0196.png", 
+        "vidTimeInSecs": 3113
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0197.png", 
+        "vidTimeInSecs": 3114
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3123
+      }, 
+      {
+        "contentHash": "[[\"(49)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0205.png", 
+        "vidTimeInSecs": 3142
+      }, 
+      {
+        "contentHash": "[[\"49\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0206.png", 
+        "vidTimeInSecs": 3143
+      }, 
+      {
+        "contentHash": "[[\"49\", \"(32)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0246.png", 
+        "vidTimeInSecs": 3145
+      }, 
+      {
+        "contentHash": "[[\"49\", \"32\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0247.png", 
+        "vidTimeInSecs": 3146
+      }, 
+      {
+        "contentHash": "[[\"\", \"32\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0260.png", 
+        "vidTimeInSecs": 3152
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3155
+      }, 
+      {
+        "contentHash": "[[\"(42)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0165.png", 
+        "vidTimeInSecs": 3197
+      }, 
+      {
+        "contentHash": "[[\"42\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0166.png", 
+        "vidTimeInSecs": 3198
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3207
+      }, 
+      {
+        "contentHash": "[[\"(45)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0159.png", 
+        "vidTimeInSecs": 3209
+      }, 
+      {
+        "contentHash": "[[\"45\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0160.png", 
+        "vidTimeInSecs": 3210
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3219
+      }, 
+      {
+        "contentHash": "[[\"(44)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0179.png", 
+        "vidTimeInSecs": 3220
+      }, 
+      {
+        "contentHash": "[[\"44\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0180.png", 
+        "vidTimeInSecs": 3221
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3230
+      }, 
+      {
+        "contentHash": "[[\"(36)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0271.png", 
+        "vidTimeInSecs": 3237
+      }, 
+      {
+        "contentHash": "[[\"36\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0272.png", 
+        "vidTimeInSecs": 3238
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3247
+      }, 
+      {
+        "contentHash": "[[\"(28)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0010.png", 
+        "vidTimeInSecs": 3267
+      }, 
+      {
+        "contentHash": "[[\"28\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0021.png", 
+        "vidTimeInSecs": 3268
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3277
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 3280
+      }, 
+      {
+        "contentHash": "[[\"26\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0043.png", 
+        "vidTimeInSecs": 3281
+      }, 
+      {
+        "contentHash": "[[\"26\", \"(43)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0279.png", 
+        "vidTimeInSecs": 3282
+      }, 
+      {
+        "contentHash": "[[\"26\", \"43\", \"(48)\"], [false, false, true], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0280.png", 
+        "vidTimeInSecs": 3283
+      }, 
+      {
+        "contentHash": "[[\"26\", \"43\", \"48\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0281.png", 
+        "vidTimeInSecs": 3284
+      }, 
+      {
+        "contentHash": "[[\"\", \"43\", \"48\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0282.png", 
+        "vidTimeInSecs": 3290
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"48\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0283.png", 
+        "vidTimeInSecs": 3292
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3293
+      }, 
+      {
+        "contentHash": "[[\"(46)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0232.png", 
+        "vidTimeInSecs": 3310
+      }, 
+      {
+        "contentHash": "[[\"46\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0233.png", 
+        "vidTimeInSecs": 3311
+      }, 
+      {
+        "contentHash": "[[\"46\", \"(26)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0287.png", 
+        "vidTimeInSecs": 3316
+      }, 
+      {
+        "contentHash": "[[\"46\", \"26\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0288.png", 
+        "vidTimeInSecs": 3317
+      }, 
+      {
+        "contentHash": "[[\"\", \"26\", \"(33)\"], [false, false, true], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0289.png", 
+        "vidTimeInSecs": 3320
+      }, 
+      {
+        "contentHash": "[[\"\", \"26\", \"33\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0290.png", 
+        "vidTimeInSecs": 3321
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"33\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0291.png", 
+        "vidTimeInSecs": 3326
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3330
+      }, 
+      {
+        "contentHash": "[[\"(44)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0179.png", 
+        "vidTimeInSecs": 3336
+      }, 
+      {
+        "contentHash": "[[\"44\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0180.png", 
+        "vidTimeInSecs": 3337
+      }, 
+      {
+        "contentHash": "[[\"44\", \"(36)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0295.png", 
+        "vidTimeInSecs": 3340
+      }, 
+      {
+        "contentHash": "[[\"44\", \"36\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0296.png", 
+        "vidTimeInSecs": 3341
+      }, 
+      {
+        "contentHash": "[[\"\", \"36\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0297.png", 
+        "vidTimeInSecs": 3346
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3350
+      }, 
+      {
+        "contentHash": "[[\"(45)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0159.png", 
+        "vidTimeInSecs": 3353
+      }, 
+      {
+        "contentHash": "[[\"45\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0160.png", 
+        "vidTimeInSecs": 3354
+      }, 
+      {
+        "contentHash": "[[\"45\", \"(34)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0301.png", 
+        "vidTimeInSecs": 3357
+      }, 
+      {
+        "contentHash": "[[\"45\", \"34\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0302.png", 
+        "vidTimeInSecs": 3358
+      }, 
+      {
+        "contentHash": "[[\"\", \"34\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0303.png", 
+        "vidTimeInSecs": 3363
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3367
+      }, 
+      {
+        "contentHash": "[[\"(26)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0042.png", 
+        "vidTimeInSecs": 3369
+      }, 
+      {
+        "contentHash": "[[\"26\", \"(44)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0306.png", 
+        "vidTimeInSecs": 3370
+      }, 
+      {
+        "contentHash": "[[\"26\", \"44\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0307.png", 
+        "vidTimeInSecs": 3371
+      }, 
+      {
+        "contentHash": "[[\"\", \"44\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0308.png", 
+        "vidTimeInSecs": 3379
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3380
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 3405
+      }, 
+      {
+        "contentHash": "[[\"25\", \"(45)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0311.png", 
+        "vidTimeInSecs": 3406
+      }, 
+      {
+        "contentHash": "[[\"25\", \"45\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0312.png", 
+        "vidTimeInSecs": 3407
+      }, 
+      {
+        "contentHash": "[[\"25\", \"45\", \"(37)\"], [false, false, true], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0313.png", 
+        "vidTimeInSecs": 3413
+      }, 
+      {
+        "contentHash": "[[\"25\", \"45\", \"37\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0314.png", 
+        "vidTimeInSecs": 3414
+      }, 
+      {
+        "contentHash": "[[\"\", \"45\", \"37\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0315.png", 
+        "vidTimeInSecs": 3415
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"37\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0316.png", 
+        "vidTimeInSecs": 3416
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3423
+      }, 
+      {
+        "contentHash": "[[\"(43)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0191.png", 
+        "vidTimeInSecs": 3431
+      }, 
+      {
+        "contentHash": "[[\"43\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0192.png", 
+        "vidTimeInSecs": 3432
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3441
+      }, 
+      {
+        "contentHash": "[[\"(45)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0159.png", 
+        "vidTimeInSecs": 3449
+      }, 
+      {
+        "contentHash": "[[\"45\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0160.png", 
+        "vidTimeInSecs": 3450
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3459
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 3470
+      }, 
+      {
+        "contentHash": "[[\"25\", \"(44)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0325.png", 
+        "vidTimeInSecs": 3471
+      }, 
+      {
+        "contentHash": "[[\"25\", \"44\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0326.png", 
+        "vidTimeInSecs": 3472
+      }, 
+      {
+        "contentHash": "[[\"\", \"44\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0308.png", 
+        "vidTimeInSecs": 3480
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3481
+      }, 
+      {
+        "contentHash": "[[\"(25)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0039.png", 
+        "vidTimeInSecs": 3501
+      }, 
+      {
+        "contentHash": "[[\"25\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0040.png", 
+        "vidTimeInSecs": 3502
+      }, 
+      {
+        "contentHash": "[[\"25\", \"(45)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0311.png", 
+        "vidTimeInSecs": 3503
+      }, 
+      {
+        "contentHash": "[[\"25\", \"45\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0312.png", 
+        "vidTimeInSecs": 3504
+      }, 
+      {
+        "contentHash": "[[\"\", \"45\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0333.png", 
+        "vidTimeInSecs": 3511
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3513
+      }, 
+      {
+        "contentHash": "[[\"(45)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0159.png", 
+        "vidTimeInSecs": 3521
+      }, 
+      {
+        "contentHash": "[[\"45\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0160.png", 
+        "vidTimeInSecs": 3522
+      }, 
+      {
+        "contentHash": "[[\"45\", \"(25)\", \"\"], [false, true, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0337.png", 
+        "vidTimeInSecs": 3524
+      }, 
+      {
+        "contentHash": "[[\"45\", \"25\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0338.png", 
+        "vidTimeInSecs": 3525
+      }, 
+      {
+        "contentHash": "[[\"\", \"25\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0169.png", 
+        "vidTimeInSecs": 3531
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3534
+      }, 
+      {
+        "contentHash": "[[\"(46)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0232.png", 
+        "vidTimeInSecs": 3542
+      }, 
+      {
+        "contentHash": "[[\"46\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0233.png", 
+        "vidTimeInSecs": 3543
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3552
+      }, 
+      {
+        "contentHash": "[[\"(48)\", \"\", \"\"], [true, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0110.png", 
+        "vidTimeInSecs": 3571
+      }, 
+      {
+        "contentHash": "[[\"48\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0111.png", 
+        "vidTimeInSecs": 3572
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0001.png", 
+        "vidTimeInSecs": 3581
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "fiilenameFullPath": "/tmp/img_radar/radar_0000.png", 
+        "vidTimeInSecs": 3583
+      }
+    ], 
+    "teamANameOrTag": "#CaliforniaRiptide_12U_CLUB_fall19", 
+    "teamHNameOrTag": "#Burlingame_12U_BGS_fall19", 
+    "teamScoreA_H": "5-6", 
+    "titleCard": "/tmp/titleCard/titleCardIcons.png", 
+    "venue": "#JackBall", 
+    "videoTag": "20191026_15", 
+    "widthOutput": 1280
+  }, 
+  "transcodeJobFramesPerSecond": 28.5, 
+  "transcodeJobTimeSeconds": 3836.0, 
+  "transcodeJobTimeToVideoTimeRatio": 1.1, 
+  "transcodeRetcode": 0, 
+  "videoTag": "20191026_15"
+}

@@ -1,0 +1,50 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/xfn5jApHVU-s6eXNv9xrKVkugy4\"", 
+  "id": "lmfO0VA-gy4", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-26T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultLanguage": "en", 
+    "description": "#JackBall\n20191026_14\nsidelinehd.com/game-20191026_14", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "#JackBall\n20191026_14\nsidelinehd.com/game-20191026_14", 
+      "title": "20191026_14-full-vid-Burlingame_Trouble_JackBall.mp4"
+    }, 
+    "publishedAt": "2019-10-27T20:19:33.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/lmfO0VA-gy4/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/lmfO0VA-gy4/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/lmfO0VA-gy4/mqdefault.jpg", 
+        "width": 320
+      }
+    }, 
+    "title": "20191026_14-full-vid-Burlingame_Trouble_JackBall.mp4"
+  }, 
+  "status": {
+    "embeddable": false, 
+    "license": "youtube", 
+    "privacyStatus": "unlisted", 
+    "publicStatsViewable": true, 
+    "uploadStatus": "uploaded"
+  }
+}

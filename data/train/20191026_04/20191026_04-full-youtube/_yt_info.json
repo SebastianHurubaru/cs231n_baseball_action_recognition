@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/rbCX0jmdUQ5t8YNu0pv2wfbZ80k\"", 
+  "id": "p4fwtEYz0GE", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-26T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "12U Synergy (#Synergy_12U_CVGSL_fall19)\n12U Suncats (#Suncats_12U_CLUB_fall19)\nFinal: 4-6\nRecorded at #JackBall\n\n\n#CastroValleyGirlsSoftballLeague\nPowered by #sidelineHD\nVT:20191026_04 / GI:20191026_04 / T0:1572113406415 / YT:http://sidelineHD.com/game-20191026_04  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "12U Synergy (#Synergy_12U_CVGSL_fall19)\n12U Suncats (#Suncats_12U_CLUB_fall19)\nFinal: 4-6\nRecorded at #JackBall\n\n\n#CastroValleyGirlsSoftballLeague\nPowered by #sidelineHD\nVT:20191026_04 / GI:20191026_04 / T0:1572113406415 / YT:http://sidelineHD.com/game-20191026_04  #LynkSpyder #GoPro", 
+      "title": "12U Pool Synergy vs. Suncats (2019.10.26)"
+    }, 
+    "publishedAt": "2019-10-27T13:53:00.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/p4fwtEYz0GE/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/p4fwtEYz0GE/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/p4fwtEYz0GE/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/p4fwtEYz0GE/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/p4fwtEYz0GE/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "12U Pool Synergy vs. Suncats (2019.10.26)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

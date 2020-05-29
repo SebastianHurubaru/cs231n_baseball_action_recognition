@@ -1,0 +1,3 @@
+# Clip definitions for 10U Pool California Lady Bulldogs vs. SouthBay Diamonds (2019.10.05)  VT:20191005_01 / GI:20191005_01
+# example: 1:00; 1:30; title ; YF ; HA
+#

@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/Hyas8iEgDqnlbNfO4-oJKY1k59Q\"", 
+  "id": "GigOGWF34gU", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-26T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "12U Universal (#Universal_12U_CLUB_fall19)\n12U Concord Glory (#ConcordGlory_12U_CLUB_fall19)\nFinal: 6-2\nRecorded at #JackBall\n\n\nPowered by #sidelineHD\nVT:20191026_03 / GI:20191026_03 / T0:1572108188164 / YT:http://sidelineHD.com/game-20191026_03  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "12U Universal (#Universal_12U_CLUB_fall19)\n12U Concord Glory (#ConcordGlory_12U_CLUB_fall19)\nFinal: 6-2\nRecorded at #JackBall\n\n\nPowered by #sidelineHD\nVT:20191026_03 / GI:20191026_03 / T0:1572108188164 / YT:http://sidelineHD.com/game-20191026_03  #LynkSpyder #GoPro", 
+      "title": "12U Pool Universal vs. Concord Glory (2019.10.26)"
+    }, 
+    "publishedAt": "2019-10-27T13:29:49.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/GigOGWF34gU/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/GigOGWF34gU/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/GigOGWF34gU/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/GigOGWF34gU/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/GigOGWF34gU/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "12U Pool Universal vs. Concord Glory (2019.10.26)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

@@ -1,0 +1,50 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/F8NZkHzkC5SU2jWGLjheZVXqb7k\"", 
+  "id": "4DUXXc4SF00", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-05T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultLanguage": "en", 
+    "description": "#PinkPantherTournament\n20191005_05\nsidelinehd.com/game-20191005_05", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "#PinkPantherTournament\n20191005_05\nsidelinehd.com/game-20191005_05", 
+      "title": "20191005_05-full-vid-NorCal_Extreme_PinkPantherTournament.mp4"
+    }, 
+    "publishedAt": "2019-10-07T16:05:57.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/4DUXXc4SF00/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/4DUXXc4SF00/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/4DUXXc4SF00/mqdefault.jpg", 
+        "width": 320
+      }
+    }, 
+    "title": "20191005_05-full-vid-NorCal_Extreme_PinkPantherTournament.mp4"
+  }, 
+  "status": {
+    "embeddable": false, 
+    "license": "youtube", 
+    "privacyStatus": "unlisted", 
+    "publicStatsViewable": true, 
+    "uploadStatus": "uploaded"
+  }
+}

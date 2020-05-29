@@ -1,0 +1,50 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/j96EZLjQVjUMZtcRhCdmVewGZdE\"", 
+  "id": "amvGQqJxHIo", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2020-01-03T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultLanguage": "en", 
+    "description": "#IrvineGreatPark\n20200103_11\nsidelinehd.com/game-20200103_11", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "#IrvineGreatPark\n20200103_11\nsidelinehd.com/game-20200103_11", 
+      "title": "20200103_11-clip_7h6nmhf3_Y-vid-make_that_2nd_play_118_(2020_01_03).mp4"
+    }, 
+    "publishedAt": "2020-01-06T18:35:30.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/amvGQqJxHIo/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/amvGQqJxHIo/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/amvGQqJxHIo/mqdefault.jpg", 
+        "width": 320
+      }
+    }, 
+    "title": "20200103_11-clip_7h6nmhf3_Y-vid-make_that_2nd_play_118_(2020_01_03).mp4"
+  }, 
+  "status": {
+    "embeddable": false, 
+    "license": "youtube", 
+    "privacyStatus": "unlisted", 
+    "publicStatsViewable": true, 
+    "uploadStatus": "uploaded"
+  }
+}

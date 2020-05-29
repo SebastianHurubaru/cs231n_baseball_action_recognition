@@ -1,0 +1,61 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/N9VS6bmXo5VnUzsxczzFJT7cYMs\"", 
+  "id": "xNclONcLQmw", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2020-01-05T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U Freedom (#Freedom_10U_SYAA_win20)\n10U United (#United_10U_SYAA_win20)\nRecorded at #IrvineGreatPark\n\n\n#SoftballYouthAllAmerican\nPowered by #sidelineHD\nVT:20200105_01 / GI:20200105_01 / T0:1578243574420 / YT:http://sidelineHD.com/game-20200105_01  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U Freedom (#Freedom_10U_SYAA_win20)\n10U United (#United_10U_SYAA_win20)\nRecorded at #IrvineGreatPark\n\n\n#SoftballYouthAllAmerican\nPowered by #sidelineHD\nVT:20200105_01 / GI:20200105_01 / T0:1578243574420 / YT:http://sidelineHD.com/game-20200105_01  #LynkSpyder #GoPro", 
+      "title": "10U Bracket Freedom vs. United (2020.01.05)"
+    }, 
+    "publishedAt": "2020-01-06T09:56:53.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/xNclONcLQmw/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/xNclONcLQmw/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/xNclONcLQmw/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/xNclONcLQmw/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/xNclONcLQmw/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Bracket Freedom vs. United (2020.01.05)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

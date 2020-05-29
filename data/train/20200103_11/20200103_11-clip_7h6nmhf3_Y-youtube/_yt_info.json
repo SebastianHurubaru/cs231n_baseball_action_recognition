@@ -1,0 +1,61 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/Vbly1nsP9HW6qcWg694uBSRymFo\"", 
+  "id": "amvGQqJxHIo", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2020-01-03T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U United (#United_10U_SYAA_win20)\nRecorded at #IrvineGreatPark\nFrom 10U Pool Liberty vs. United: https://youtu.be/1dUkMuc90P8\n\n#SoftballYouthAllAmerican\nPowered by #sidelineHD\nVT:20200103_11 / GI:20200103_11-7h6nmhf3 / T0:1578072217010 / YT:http://sidelineHD.com/game-20200103_11-7h6nmhf3  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U United (#United_10U_SYAA_win20)\nRecorded at #IrvineGreatPark\nFrom 10U Pool Liberty vs. United: https://youtu.be/1dUkMuc90P8\n\n#SoftballYouthAllAmerican\nPowered by #sidelineHD\nVT:20200103_11 / GI:20200103_11-7h6nmhf3 / T0:1578072217010 / YT:http://sidelineHD.com/game-20200103_11-7h6nmhf3  #LynkSpyder #GoPro", 
+      "title": "always try for the 2nd play #118 #159 (2020.01.03)"
+    }, 
+    "publishedAt": "2020-01-06T18:36:01.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/amvGQqJxHIo/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/amvGQqJxHIo/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/amvGQqJxHIo/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/amvGQqJxHIo/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/amvGQqJxHIo/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "always try for the 2nd play #118 #159 (2020.01.03)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "processed"
+  }
+}

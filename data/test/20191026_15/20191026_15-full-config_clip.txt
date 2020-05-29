@@ -1,0 +1,3 @@
+# Clip definitions for 12U Pool California Riptide vs. Burlingame (2019.10.26)  VT:20191026_15 / GI:20191026_15
+# example: 1:00; 1:30; title ; YF ; HA
+#

@@ -1,0 +1,1024 @@
+{
+  "_isAlwaysIncludeInReport": true, 
+  "gameId": "20191124_13", 
+  "gpsAlt": -13.517556, 
+  "gpsFix": 3, 
+  "gpsLat": 37.553091, 
+  "gpsLong": -121.965374, 
+  "gpsTimestamp": 1574635371180, 
+  "metadataVersion": 101, 
+  "mpegBitrate": 10317.307, 
+  "mpegCodec": "h264", 
+  "mpegDurationSeconds": 4599.562, 
+  "mpegDurationString": "1:16:39.562", 
+  "mpegEstimatedFrames": 137849, 
+  "mpegFilename": "20191124_13-full-vid-All_Cal_DudleyChallenge.mp4", 
+  "mpegFilesize": 6134208057, 
+  "mpegFps": 29.97, 
+  "mpegHeight": 720, 
+  "mpegWidth": 1280, 
+  "radarSpeedData": [
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574635394
+    }, 
+    {
+      "speed": "55", 
+      "utcTimestamp": 1574635417
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574635434
+    }, 
+    {
+      "speed": "58", 
+      "utcTimestamp": 1574635438
+    }, 
+    {
+      "speed": "55", 
+      "utcTimestamp": 1574635480
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574635491
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574635521
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574635538
+    }, 
+    {
+      "speed": "50", 
+      "utcTimestamp": 1574635569
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574635585
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574635598
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574635634
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574635695
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574635703
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574635712
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574635721
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574635755
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574635768
+    }, 
+    {
+      "speed": "51", 
+      "utcTimestamp": 1574635796
+    }, 
+    {
+      "speed": "51", 
+      "utcTimestamp": 1574635814
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574635828
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574635841
+    }, 
+    {
+      "speed": "51", 
+      "utcTimestamp": 1574635855
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574635880
+    }, 
+    {
+      "speed": "46", 
+      "utcTimestamp": 1574635895
+    }, 
+    {
+      "speed": "48", 
+      "utcTimestamp": 1574635899
+    }, 
+    {
+      "speed": "49", 
+      "utcTimestamp": 1574635959
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574635981
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574635990
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574636004
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574636012
+    }, 
+    {
+      "speed": "50", 
+      "utcTimestamp": 1574636052
+    }, 
+    {
+      "speed": "45", 
+      "utcTimestamp": 1574636067
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574636082
+    }, 
+    {
+      "speed": "48", 
+      "utcTimestamp": 1574636098
+    }, 
+    {
+      "speed": "51", 
+      "utcTimestamp": 1574636117
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574636132
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574636158
+    }, 
+    {
+      "speed": "52", 
+      "utcTimestamp": 1574636194
+    }, 
+    {
+      "speed": "54", 
+      "utcTimestamp": 1574636219
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574636237
+    }, 
+    {
+      "speed": "35", 
+      "utcTimestamp": 1574636246
+    }, 
+    {
+      "speed": "50", 
+      "utcTimestamp": 1574636261
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574636291
+    }, 
+    {
+      "speed": "42", 
+      "utcTimestamp": 1574636315
+    }, 
+    {
+      "speed": "53", 
+      "utcTimestamp": 1574636336
+    }
+  ], 
+  "rawVidMetadata": {
+    "GPV-0101_18.MP4": {
+      "filename": "GPV-0101_18.MP4", 
+      "gpsAlt": -13.517556, 
+      "gpsFix": 3, 
+      "gpsLat": 37.553091, 
+      "gpsLong": -121.965374, 
+      "gpsPrettyTime": "2019-11-24 22:32:09.180 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1574634729180, 
+      "mpegBitrate": 29968.366, 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 1062.061, 
+      "mpegDurationString": "17:42.061", 
+      "mpegEstimatedFrames": 31830, 
+      "mpegFilename": "GPV-0101_18.MP4", 
+      "mpegFilesize": 4003322143, 
+      "mpegFps": 29.97, 
+      "mpegHeight": 1080, 
+      "mpegWidth": 1920, 
+      "stillFrameFilename": "GPV-0101_18.jpg"
+    }, 
+    "GPV-0101_19.MP4": {
+      "filename": "GPV-0101_19.MP4", 
+      "gpsAlt": -13.461611, 
+      "gpsFix": 3, 
+      "gpsLat": 37.55307, 
+      "gpsLong": -121.965378, 
+      "gpsPrettyTime": "2019-11-24 22:49:51.175 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1574635791175, 
+      "mpegBitrate": 29968.968, 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 1062.061, 
+      "mpegDurationString": "17:42.061", 
+      "mpegEstimatedFrames": 31830, 
+      "mpegFilename": "GPV-0101_19.MP4", 
+      "mpegFilesize": 4003402385, 
+      "mpegFps": 29.97, 
+      "mpegHeight": 1080, 
+      "mpegWidth": 1920, 
+      "stillFrameFilename": "GPV-0101_19.jpg"
+    }, 
+    "GPV-0101_20.MP4": {
+      "filename": "GPV-0101_20.MP4", 
+      "gpsAlt": -7.098684, 
+      "gpsFix": 3, 
+      "gpsLat": 37.553154, 
+      "gpsLong": -121.965398, 
+      "gpsPrettyTime": "2019-11-24 23:07:33.170 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1574636853170, 
+      "mpegBitrate": 29968.504, 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 1062.061, 
+      "mpegDurationString": "17:42.061", 
+      "mpegEstimatedFrames": 31830, 
+      "mpegFilename": "GPV-0101_20.MP4", 
+      "mpegFilesize": 4003340924, 
+      "mpegFps": 29.97, 
+      "mpegHeight": 1080, 
+      "mpegWidth": 1920, 
+      "stillFrameFilename": "GPV-0101_20.jpg"
+    }, 
+    "GPV-0101_21.MP4": {
+      "filename": "GPV-0101_21.MP4", 
+      "gpsAlt": -14.046294, 
+      "gpsFix": 3, 
+      "gpsLat": 37.553087, 
+      "gpsLong": -121.965409, 
+      "gpsPrettyTime": "2019-11-24 23:25:15.220 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1574637915220, 
+      "mpegBitrate": 29968.847, 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 1062.061, 
+      "mpegDurationString": "17:42.061", 
+      "mpegEstimatedFrames": 31830, 
+      "mpegFilename": "GPV-0101_21.MP4", 
+      "mpegFilesize": 4003385992, 
+      "mpegFps": 29.97, 
+      "mpegHeight": 1080, 
+      "mpegWidth": 1920, 
+      "stillFrameFilename": "GPV-0101_21.jpg"
+    }, 
+    "GPV-0101_22.MP4": {
+      "filename": "GPV-0101_22.MP4", 
+      "gpsAlt": -3.596722, 
+      "gpsFix": 3, 
+      "gpsLat": 37.553034, 
+      "gpsLong": -121.965393, 
+      "gpsPrettyTime": "2019-11-24 23:42:57.270 UTC", 
+      "gpsT0Data": true, 
+      "gpsTimestamp": 1574638977270, 
+      "mpegBitrate": 29968.549, 
+      "mpegCodec": "h264", 
+      "mpegDurationSeconds": 1062.061, 
+      "mpegDurationString": "17:42.061", 
+      "mpegEstimatedFrames": 31830, 
+      "mpegFilename": "GPV-0101_22.MP4", 
+      "mpegFilesize": 4003346531, 
+      "mpegFps": 29.97, 
+      "mpegHeight": 1080, 
+      "mpegWidth": 1920, 
+      "stillFrameFilename": "GPV-0101_22.jpg"
+    }
+  }, 
+  "scoreboardDataSeries": null, 
+  "transcodeCommandLine": "# melt script created via melt_wrapAndExecWithTarget()\n# target     [/root/sbot/vidfiles/scene_full/20191124_13/20191124_13-full-vid-All_Cal_DudleyChallenge.mp4]\n# generated  [Mon Nov 25 20:13:27 2019]\n\nmelt \\\n       \"/root/sbot/vidfiles/scene_raw/20191124_13/GPV-0101_18.MP4\"            in=19241  out=31830  -attach crop use_profile=1 left=141 right=195 bottom=92 top=97 \\\n       \"/root/sbot/vidfiles/scene_raw/20191124_13/GPV-0101_19.MP4\"            in=0      out=31830  -attach crop use_profile=1 left=141 right=195 bottom=92 top=97 \\\n       \"/root/sbot/vidfiles/scene_raw/20191124_13/GPV-0101_20.MP4\"            in=0      out=31830  -attach crop use_profile=1 left=141 right=195 bottom=92 top=97 \\\n       \"/root/sbot/vidfiles/scene_raw/20191124_13/GPV-0101_21.MP4\"            in=0      out=31830  -attach crop use_profile=1 left=141 right=195 bottom=92 top=97 \\\n       \"/root/sbot/vidfiles/scene_raw/20191124_13/GPV-0101_22.MP4\"            in=0      out=29670  -attach crop use_profile=1 left=141 right=195 bottom=92 top=97 \\\n  -video-track \\\n       \"/tmp/titleCard/titleCardIcons.png\"                                    in=0      out=149    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-shd-white-on-blank.png\"         in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-lynkspyder.png\"                 in=0      out=898    \\\n       colour:transparent                                                     in=0      out=4      \\\n       \"/root/sbot/dumpster/logo-overlay/logo-pocket-radar2.png\"              in=0      out=165    \\\n       colour:transparent                                                     in=0      out=24     \\\n  -video-track \\\n       colour:transparent                                                     in=0      out=149    \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=478    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=59     \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=419    \\\n       \"/tmp/r/r0005.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0006.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=89     \\\n       \"/tmp/r/r0010.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0011.png\"                                                     in=0      out=119    \\\n       \"/tmp/r/r0012.png\"                                                     in=0      out=119    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=988    \\\n       \"/tmp/r/r0005.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0006.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=59     \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=629    \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=28     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=658    \\\n       \"/tmp/r/r0026.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0027.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=209    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=119    \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=808    \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=1557   \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=209    \\\n       \"/tmp/r/r0040.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0041.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=28     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=748    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=119    \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=568    \\\n       \"/tmp/r/r0053.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0054.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=269    \\\n       \"/tmp/r/r0053.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0054.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=149    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=119    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=148    \\\n       \"/tmp/r/r0053.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0054.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=479    \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=179    \\\n       \"/tmp/r/r0071.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0072.png\"                                                     in=0      out=89     \\\n       \"/tmp/r/r0073.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0074.png\"                                                     in=0      out=119    \\\n       \"/tmp/r/r0075.png\"                                                     in=0      out=119    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=1527   \\\n       \"/tmp/r/r0077.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0078.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=389    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=149    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=209    \\\n       \"/tmp/r/r0087.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0088.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=928    \\\n       \"/tmp/r/r0026.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0027.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=179    \\\n       \"/tmp/r/r0093.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0094.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=179    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=209    \\\n       \"/tmp/r/r0099.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0100.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=299    \\\n       \"/tmp/r/r0053.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0054.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=179    \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=508    \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=808    \\\n       \"/tmp/r/r0023.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0024.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=479    \\\n       \"/tmp/r/r0002.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0003.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=269    \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0119.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0120.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=179    \\\n       \"/tmp/r/r0026.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0027.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=628    \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=449    \\\n       \"/tmp/r/r0128.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0129.png\"                                                     in=0      out=238    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=359    \\\n       \"/tmp/r/r0020.png\"                                                     in=0      out=29     \\\n       \"/tmp/r/r0021.png\"                                                     in=0      out=239    \\\n       \"/tmp/r/r0001.png\"                                                     in=0      out=59     \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=9999   \\\n       \"/tmp/r/r0000.png\"                                                     in=0      out=8502   \\\n  -transition composite a_track=0 b_track=1 \\\n  -transition composite a_track=0 b_track=2 \\\n       \"/root/sbot/assets/shd1-screen-grey-on-green-1920.png\"                 in=0      out=119    \\\n           -mix 25 -mixer luma -mixer mix:-1\\\n\\\n  -consumer avformat:\"/root/sbot/vidfiles/scene_full/20191124_13/20191124_13-full-vid-All_Cal_DudleyChallenge.mp4\" \\\n      f=mp4                          movflags=+faststart \\\n      acodec=aac ar=48000 ab=384k    vcodec=libx264 progressive=1 preset=fast \\\n      crf=14 g=15 bf=2               width=1280 height=720 \\\n      threads=0                      frame_rate_num=30000 frame_rate_den=1001 \n", 
+  "transcodeConfig": {
+    "brandingEndCard": "/root/sbot/assets/shd1-screen-grey-on-green-1920.png", 
+    "configTranscodeVersion": 108, 
+    "constantRateFactor": 14, 
+    "constantRateFactorOriginal": "B9", 
+    "cropSize": 0.7375, 
+    "duPctPan": 49, 
+    "firstFileStartOffset": "10:42", 
+    "fpsOutput": 29.97, 
+    "gameId": "20191124_13", 
+    "heightOutput": 720, 
+    "isAlwaysIncludeInReport": true, 
+    "isSkipTranscode": false, 
+    "isSkipYtUpload": false, 
+    "lastFileStopOffset": "16:30", 
+    "logoSelection": "auto", 
+    "lrPctPan": 42, 
+    "pradar": true, 
+    "preTitle": "Bracket Championship", 
+    "radarOverlaySet": [
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "filenameFullPath": "/tmp/r/r0000.png", 
+        "vidTimeInSecs": 5
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 21
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 23
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 24
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 32
+      }, 
+      {
+        "contentHash": "[[\"(55)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0005.png", 
+        "vidTimeInSecs": 46
+      }, 
+      {
+        "contentHash": "[[\"55\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0006.png", 
+        "vidTimeInSecs": 47
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 55
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 63
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 64
+      }, 
+      {
+        "contentHash": "[[\"54\", \"(58)\", \"\"], [false, true, false], true]", 
+        "filenameFullPath": "/tmp/r/r0010.png", 
+        "vidTimeInSecs": 67
+      }, 
+      {
+        "contentHash": "[[\"54\", \"58\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0011.png", 
+        "vidTimeInSecs": 68
+      }, 
+      {
+        "contentHash": "[[\"\", \"58\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0012.png", 
+        "vidTimeInSecs": 72
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 76
+      }, 
+      {
+        "contentHash": "[[\"(55)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0005.png", 
+        "vidTimeInSecs": 109
+      }, 
+      {
+        "contentHash": "[[\"55\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0006.png", 
+        "vidTimeInSecs": 110
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 118
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 120
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 121
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 129
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 150
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 151
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 159
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 167
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 168
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 176
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0026.png", 
+        "vidTimeInSecs": 198
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0027.png", 
+        "vidTimeInSecs": 199
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 207
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 214
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 215
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 223
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 227
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 228
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 236
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 263
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 264
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 272
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 324
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 325
+      }, 
+      {
+        "contentHash": "[[\"53\", \"(54)\", \"\"], [false, true, false], true]", 
+        "filenameFullPath": "/tmp/r/r0040.png", 
+        "vidTimeInSecs": 332
+      }, 
+      {
+        "contentHash": "[[\"\", \"54\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0041.png", 
+        "vidTimeInSecs": 333
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 341
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 342
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 350
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 351
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 359
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 384
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 385
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 393
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 397
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 398
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 406
+      }, 
+      {
+        "contentHash": "[[\"(51)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0053.png", 
+        "vidTimeInSecs": 425
+      }, 
+      {
+        "contentHash": "[[\"51\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0054.png", 
+        "vidTimeInSecs": 426
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 434
+      }, 
+      {
+        "contentHash": "[[\"(51)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0053.png", 
+        "vidTimeInSecs": 443
+      }, 
+      {
+        "contentHash": "[[\"51\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0054.png", 
+        "vidTimeInSecs": 444
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 452
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 457
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 458
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 466
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 470
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 471
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 479
+      }, 
+      {
+        "contentHash": "[[\"(51)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0053.png", 
+        "vidTimeInSecs": 484
+      }, 
+      {
+        "contentHash": "[[\"51\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0054.png", 
+        "vidTimeInSecs": 485
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 493
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 509
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 510
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 518
+      }, 
+      {
+        "contentHash": "[[\"(46)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0071.png", 
+        "vidTimeInSecs": 524
+      }, 
+      {
+        "contentHash": "[[\"46\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0072.png", 
+        "vidTimeInSecs": 525
+      }, 
+      {
+        "contentHash": "[[\"46\", \"(48)\", \"\"], [false, true, false], true]", 
+        "filenameFullPath": "/tmp/r/r0073.png", 
+        "vidTimeInSecs": 528
+      }, 
+      {
+        "contentHash": "[[\"46\", \"48\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0074.png", 
+        "vidTimeInSecs": 529
+      }, 
+      {
+        "contentHash": "[[\"\", \"48\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0075.png", 
+        "vidTimeInSecs": 533
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 537
+      }, 
+      {
+        "contentHash": "[[\"(49)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0077.png", 
+        "vidTimeInSecs": 588
+      }, 
+      {
+        "contentHash": "[[\"49\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0078.png", 
+        "vidTimeInSecs": 589
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 597
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 610
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 611
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 619
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 620
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 628
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 633
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 634
+      }, 
+      {
+        "contentHash": "[[\"52\", \"(52)\", \"\"], [false, true, false], true]", 
+        "filenameFullPath": "/tmp/r/r0087.png", 
+        "vidTimeInSecs": 641
+      }, 
+      {
+        "contentHash": "[[\"\", \"52\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0088.png", 
+        "vidTimeInSecs": 642
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 650
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0026.png", 
+        "vidTimeInSecs": 681
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0027.png", 
+        "vidTimeInSecs": 682
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 690
+      }, 
+      {
+        "contentHash": "[[\"(45)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0093.png", 
+        "vidTimeInSecs": 696
+      }, 
+      {
+        "contentHash": "[[\"45\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0094.png", 
+        "vidTimeInSecs": 697
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 705
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 711
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 712
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 720
+      }, 
+      {
+        "contentHash": "[[\"(48)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0099.png", 
+        "vidTimeInSecs": 727
+      }, 
+      {
+        "contentHash": "[[\"48\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0100.png", 
+        "vidTimeInSecs": 728
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 736
+      }, 
+      {
+        "contentHash": "[[\"(51)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0053.png", 
+        "vidTimeInSecs": 746
+      }, 
+      {
+        "contentHash": "[[\"51\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0054.png", 
+        "vidTimeInSecs": 747
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 755
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 761
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 762
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 770
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 787
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 788
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 796
+      }, 
+      {
+        "contentHash": "[[\"(52)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0023.png", 
+        "vidTimeInSecs": 823
+      }, 
+      {
+        "contentHash": "[[\"52\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0024.png", 
+        "vidTimeInSecs": 824
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 832
+      }, 
+      {
+        "contentHash": "[[\"(54)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0002.png", 
+        "vidTimeInSecs": 848
+      }, 
+      {
+        "contentHash": "[[\"54\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0003.png", 
+        "vidTimeInSecs": 849
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 857
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 866
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 867
+      }, 
+      {
+        "contentHash": "[[\"(35)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0119.png", 
+        "vidTimeInSecs": 875
+      }, 
+      {
+        "contentHash": "[[\"35\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0120.png", 
+        "vidTimeInSecs": 876
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 884
+      }, 
+      {
+        "contentHash": "[[\"(50)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0026.png", 
+        "vidTimeInSecs": 890
+      }, 
+      {
+        "contentHash": "[[\"50\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0027.png", 
+        "vidTimeInSecs": 891
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 899
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 920
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 921
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 929
+      }, 
+      {
+        "contentHash": "[[\"(42)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0128.png", 
+        "vidTimeInSecs": 944
+      }, 
+      {
+        "contentHash": "[[\"42\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0129.png", 
+        "vidTimeInSecs": 945
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 953
+      }, 
+      {
+        "contentHash": "[[\"(53)\", \"\", \"\"], [true, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0020.png", 
+        "vidTimeInSecs": 965
+      }, 
+      {
+        "contentHash": "[[\"53\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0021.png", 
+        "vidTimeInSecs": 966
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], true]", 
+        "filenameFullPath": "/tmp/r/r0001.png", 
+        "vidTimeInSecs": 974
+      }, 
+      {
+        "contentHash": "[[\"\", \"\", \"\"], [false, false, false], false]", 
+        "filenameFullPath": "/tmp/r/r0000.png", 
+        "vidTimeInSecs": 976
+      }
+    ], 
+    "scoreboardConfig": "", 
+    "teamANameOrTag": "#AllAmericanSportsAcademy_14U_CLUB_fall19", 
+    "teamHNameOrTag": "#CalRays_12U_CLUB_fall19", 
+    "teamScoreA_H": "12-2", 
+    "titleCard": "/tmp/titleCard/titleCardIcons.png", 
+    "venue": "#DudleyChallenge", 
+    "videoTag": "20191124_13", 
+    "widthOutput": 1280
+  }, 
+  "transcodeJobFramesPerSecond": 19.2, 
+  "transcodeJobTimeSeconds": 7197.0, 
+  "transcodeJobTimeToVideoTimeRatio": 1.6, 
+  "videoTag": "20191124_13"
+}

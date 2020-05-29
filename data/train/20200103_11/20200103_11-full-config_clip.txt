@@ -1,0 +1,4 @@
+# Clip definitions for 10U Pool Liberty vs. United (2020.01.03)  VT:20200103_11 / GI:20200103_11
+# example: 1:00; 1:30; title ; YF ; HA
+#
+24:44; 25:00; make that 2nd play #118 (2020.01.03); Y; H

@@ -1,0 +1,61 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/EiCFNAx0-3Kszmjft9DmK3oxU0U\"", 
+  "id": "ny10ISHaVF0", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2020-01-04T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U Freedom (#Freedom_10U_SYAA_win20)\n10U United (#United_10U_SYAA_win20)\nFinal: 4-1\nRecorded at #IrvineGreatPark\n\n\n#SoftballYouthAllAmerican\nPowered by #sidelineHD\nVT:20200104_01 / GI:20200104_01 / T0:1578162872139 / YT:http://sidelineHD.com/game-20200104_01  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U Freedom (#Freedom_10U_SYAA_win20)\n10U United (#United_10U_SYAA_win20)\nFinal: 4-1\nRecorded at #IrvineGreatPark\n\n\n#SoftballYouthAllAmerican\nPowered by #sidelineHD\nVT:20200104_01 / GI:20200104_01 / T0:1578162872139 / YT:http://sidelineHD.com/game-20200104_01  #LynkSpyder #GoPro", 
+      "title": "10U Pool Freedom vs. United (2020.01.04)"
+    }, 
+    "publishedAt": "2020-01-05T04:41:52.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/ny10ISHaVF0/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/ny10ISHaVF0/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/ny10ISHaVF0/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/ny10ISHaVF0/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/ny10ISHaVF0/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Pool Freedom vs. United (2020.01.04)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

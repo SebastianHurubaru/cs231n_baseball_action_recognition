@@ -1,0 +1,50 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/FyRDdipLLcOQRp7Ioz5aocuof3g\"", 
+  "id": "JzfHuTKDna8", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2020-01-03T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultLanguage": "en", 
+    "description": "#IrvineGreatPark\n20200103_22\nsidelinehd.com/game-20200103_22", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "#IrvineGreatPark\n20200103_22\nsidelinehd.com/game-20200103_22", 
+      "title": "20200103_22-full-vid-Freedom_United_IrvineGreatPark.mp4"
+    }, 
+    "publishedAt": "2020-01-04T15:55:52.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/JzfHuTKDna8/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/JzfHuTKDna8/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/JzfHuTKDna8/mqdefault.jpg", 
+        "width": 320
+      }
+    }, 
+    "title": "20200103_22-full-vid-Freedom_United_IrvineGreatPark.mp4"
+  }, 
+  "status": {
+    "embeddable": false, 
+    "license": "youtube", 
+    "privacyStatus": "unlisted", 
+    "publicStatsViewable": true, 
+    "uploadStatus": "uploaded"
+  }
+}

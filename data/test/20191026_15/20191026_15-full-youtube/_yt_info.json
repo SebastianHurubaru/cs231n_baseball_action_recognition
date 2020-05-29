@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/K1IgKKrE9pww4VVVwE7v-OvRRAs\"", 
+  "id": "6p-CPPuEsN8", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-26T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "12U California Riptide (#CaliforniaRiptide_12U_CLUB_fall19)\n12U Burlingame (#Burlingame_12U_BGS_fall19)\nFinal: 5-6\nRecorded at #JackBall\n\n\n#BurlingameGirlsSoftball\nPowered by #sidelineHD\nVT:20191026_15 / GI:20191026_15 / T0:1572142430039 / YT:http://sidelineHD.com/game-20191026_15  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "12U California Riptide (#CaliforniaRiptide_12U_CLUB_fall19)\n12U Burlingame (#Burlingame_12U_BGS_fall19)\nFinal: 5-6\nRecorded at #JackBall\n\n\n#BurlingameGirlsSoftball\nPowered by #sidelineHD\nVT:20191026_15 / GI:20191026_15 / T0:1572142430039 / YT:http://sidelineHD.com/game-20191026_15  #LynkSpyder #GoPro", 
+      "title": "12U Pool California Riptide vs. Burlingame (2019.10.26)"
+    }, 
+    "publishedAt": "2019-10-27T21:40:41.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/6p-CPPuEsN8/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/6p-CPPuEsN8/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/6p-CPPuEsN8/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/6p-CPPuEsN8/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/6p-CPPuEsN8/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "12U Pool California Riptide vs. Burlingame (2019.10.26)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

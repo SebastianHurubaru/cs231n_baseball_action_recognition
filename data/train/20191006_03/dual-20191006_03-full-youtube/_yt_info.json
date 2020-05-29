@@ -1,0 +1,61 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/ChMvl8myFQo6R7Z4rN-kz-3ahfk\"", 
+  "id": "msJaw4CLm18", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-06T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U SouthBay Diamonds (#SouthBayDiamonds_10U_CLUB_fall19)\n10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\nFinal: 0-4\nRecorded at #PinkPantherTournament\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:06 top,  7:51 bot\n  #2:  15:37 top,  21:17 bot\n  #3:  29:01 top,  35:40 bot\n  #4:  1:00:11 top,  1:08:24 bot\n\nNorCal Blitz at-bats (times approximate)\n  #3:  11:29,  48:55\n  #7:  24:03,  56:43\n  #8:  10:54,  44:45\n  #9:  7:50,  42:55\n  #12:  1:11:15\n  #13:  21:16,  54:45\n  #14:  37:45,  1:12:32,  1:13:07\n  #18:  12:59,  14:28,  51:16\n  #40:  26:28,  1:08:23\n  #72:  35:39\n\nNorCal Blitz pitchers (start of inning)\n  #18:  15:36,  29:00,  1:00:10\n\nPowered by #sidelineHD\nVT:20191006_03 / GI:20191006_03 / T0:1570385142320 / YT:http://sidelineHD.com/game-20191006_03  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U SouthBay Diamonds (#SouthBayDiamonds_10U_CLUB_fall19)\n10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\nFinal: 0-4\nRecorded at #PinkPantherTournament\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:06 top,  7:51 bot\n  #2:  15:37 top,  21:17 bot\n  #3:  29:01 top,  35:40 bot\n  #4:  1:00:11 top,  1:08:24 bot\n\nNorCal Blitz at-bats (times approximate)\n  #3:  11:29,  48:55\n  #7:  24:03,  56:43\n  #8:  10:54,  44:45\n  #9:  7:50,  42:55\n  #12:  1:11:15\n  #13:  21:16,  54:45\n  #14:  37:45,  1:12:32,  1:13:07\n  #18:  12:59,  14:28,  51:16\n  #40:  26:28,  1:08:23\n  #72:  35:39\n\nNorCal Blitz pitchers (start of inning)\n  #18:  15:36,  29:00,  1:00:10\n\nPowered by #sidelineHD\nVT:20191006_03 / GI:20191006_03 / T0:1570385142320 / YT:http://sidelineHD.com/game-20191006_03  #LynkSpyder #GoPro", 
+      "title": "10U Gold Semifinal SouthBay Diamonds vs. NorCal Blitz (2019.10.06)"
+    }, 
+    "publishedAt": "2019-10-08T08:26:20.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/msJaw4CLm18/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/msJaw4CLm18/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/msJaw4CLm18/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/msJaw4CLm18/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/msJaw4CLm18/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Gold Semifinal SouthBay Diamonds vs. NorCal Blitz (2019.10.06)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

@@ -1,0 +1,3 @@
+# Clip definitions for 14U Pool Freedom vs. Patriots (2020.01.03)  VT:20200103_23 / GI:20200103_23
+# example: 1:00; 1:30; title ; YF ; HA
+#

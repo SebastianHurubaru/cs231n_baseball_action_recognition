@@ -1,0 +1,61 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/NexZfnAoR-IrtMZWJQzDQBR1ubc\"", 
+  "id": "brr1jsINSZg", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2020-01-03T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "14U Liberty (#Liberty_14U_SYAA_win20)\n14U United (#United_14U_SYAA_win20)\nFinal: 8-16\nRecorded at #IrvineGreatPark\n\n\n#SoftballYouthAllAmerican\nPowered by #sidelineHD\nVT:20200103_21 / GI:20200103_21 / T0:1578070738590 / YT:http://sidelineHD.com/game-20200103_21  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "14U Liberty (#Liberty_14U_SYAA_win20)\n14U United (#United_14U_SYAA_win20)\nFinal: 8-16\nRecorded at #IrvineGreatPark\n\n\n#SoftballYouthAllAmerican\nPowered by #sidelineHD\nVT:20200103_21 / GI:20200103_21 / T0:1578070738590 / YT:http://sidelineHD.com/game-20200103_21  #LynkSpyder #GoPro", 
+      "title": "14U Pool Liberty vs. United (2020.01.03)"
+    }, 
+    "publishedAt": "2020-01-04T14:21:40.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/brr1jsINSZg/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/brr1jsINSZg/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/brr1jsINSZg/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/brr1jsINSZg/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/brr1jsINSZg/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "14U Pool Liberty vs. United (2020.01.03)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

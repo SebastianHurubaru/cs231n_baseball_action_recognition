@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/pXXcMkOlO8E_Bcs8RLDfR2wyUOE\"", 
+  "id": "wB0FeT4uiGk", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-27T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\n10U Stompers (#Stompers_10U_SRVGAL_fall19)\nFinal: 9-1\nRecorded at #JackBall\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:05 top,  12:22 bot\n  #2:  37:55 top,  45:32 bot\n  #3:  52:31 top,  58:26 bot\n  #4:  1:08:47 top\n\nNorCal Blitz at-bats\n  #1 :  12:22,  30:09,  1:03:33\n  #3 :  19:01,  48:13,  1:06:33\n  #8 :  16:08,  47:11,  1:05:28\n  #9 :  14:06,  34:29,  45:32,  1:04:02\n  #12:  23:39,  1:01:29\n  #13:  21:54,  59:54\n  #18:  19:34,  48:51\n  #35:  25:24,  1:02:01\n  #72:  21:02,  58:26\n\nNorCal Blitz pitchers\n  #18:  0:05,  37:55,  52:31,  1:08:47\n\nStompers at-bats\n  #1 :  8:21,  1:08:47\n  #2 :  1:15,  53:34\n  #6 :  0:05,  52:31\n  #7 :  40:38,  1:13:29\n  #9 :  2:19,  54:21\n  #10:  39:48,  1:11:44\n  #12:  41:09\n  #22:  37:55,  1:11:00\n  #30:  6:10,  55:52\n\nStompers pitchers\n  #1:  45:32,  58:26\n  #12:  12:22\n\n#SanRamonValleyGirlsAthleticLeague\nPowered by #sidelineHD\nVT:20191027_01 / GI:20191027_01 / T0:1572199930839 / YT:http://sidelineHD.com/game-20191027_01  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\n10U Stompers (#Stompers_10U_SRVGAL_fall19)\nFinal: 9-1\nRecorded at #JackBall\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:05 top,  12:22 bot\n  #2:  37:55 top,  45:32 bot\n  #3:  52:31 top,  58:26 bot\n  #4:  1:08:47 top\n\nNorCal Blitz at-bats\n  #1 :  12:22,  30:09,  1:03:33\n  #3 :  19:01,  48:13,  1:06:33\n  #8 :  16:08,  47:11,  1:05:28\n  #9 :  14:06,  34:29,  45:32,  1:04:02\n  #12:  23:39,  1:01:29\n  #13:  21:54,  59:54\n  #18:  19:34,  48:51\n  #35:  25:24,  1:02:01\n  #72:  21:02,  58:26\n\nNorCal Blitz pitchers\n  #18:  0:05,  37:55,  52:31,  1:08:47\n\nStompers at-bats\n  #1 :  8:21,  1:08:47\n  #2 :  1:15,  53:34\n  #6 :  0:05,  52:31\n  #7 :  40:38,  1:13:29\n  #9 :  2:19,  54:21\n  #10:  39:48,  1:11:44\n  #12:  41:09\n  #22:  37:55,  1:11:00\n  #30:  6:10,  55:52\n\nStompers pitchers\n  #1:  45:32,  58:26\n  #12:  12:22\n\n#SanRamonValleyGirlsAthleticLeague\nPowered by #sidelineHD\nVT:20191027_01 / GI:20191027_01 / T0:1572199930839 / YT:http://sidelineHD.com/game-20191027_01  #LynkSpyder #GoPro", 
+      "title": "10U Gold Bracket NorCal Blitz vs. Stompers (2019.10.27)"
+    }, 
+    "publishedAt": "2019-10-29T03:47:40.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/wB0FeT4uiGk/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/wB0FeT4uiGk/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/wB0FeT4uiGk/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/wB0FeT4uiGk/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/wB0FeT4uiGk/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Gold Bracket NorCal Blitz vs. Stompers (2019.10.27)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

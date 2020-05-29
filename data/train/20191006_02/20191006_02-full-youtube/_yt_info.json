@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/pAFbHiITiIOHc8RbaeY6DBP25vI\"", 
+  "id": "2SULFG77Bzg", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-06T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U Extreme (#Extreme_10U_CLUB_fall19)\n10U Steal Breeze (#StealBreeze_10U_PGSA_fall19)\nFinal: 0-13\nRecorded at #PinkPantherTournament\n\n\n#PetalumaGirlsSoftballAssociation\nPowered by #sidelineHD\nVT:20191006_02 / GI:20191006_02 / T0:1570379665759 / YT:http://sidelineHD.com/game-20191006_02  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U Extreme (#Extreme_10U_CLUB_fall19)\n10U Steal Breeze (#StealBreeze_10U_PGSA_fall19)\nFinal: 0-13\nRecorded at #PinkPantherTournament\n\n\n#PetalumaGirlsSoftballAssociation\nPowered by #sidelineHD\nVT:20191006_02 / GI:20191006_02 / T0:1570379665759 / YT:http://sidelineHD.com/game-20191006_02  #LynkSpyder #GoPro", 
+      "title": "10U Extreme vs. Steal Breeze (2019.10.06)"
+    }, 
+    "publishedAt": "2019-10-07T15:18:59.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/2SULFG77Bzg/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/2SULFG77Bzg/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/2SULFG77Bzg/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/2SULFG77Bzg/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/2SULFG77Bzg/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Extreme vs. Steal Breeze (2019.10.06)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "processed"
+  }
+}

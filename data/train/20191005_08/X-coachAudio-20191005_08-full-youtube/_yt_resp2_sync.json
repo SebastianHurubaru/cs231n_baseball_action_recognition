@@ -1,0 +1,61 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/mhhkikTHrSx_17Lvw9vEkmbz4Hc\"", 
+  "id": "KEdPIQLWHQI", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-05T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U California Lady Bulldogs (#CaliforniaLadyBulldogs_10U_CLUB_fall19)\n10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\nFinal: 3-7\nRecorded at #PinkPantherTournament\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:06 top,  11:41 bot\n  #2:  25:17 top,  32:52 bot\n  #3:  42:26 top,  53:41 bot\n  #4:  1:12:41 top\n\nNorCal Blitz at-bats (times approximate)\n  #1:  11:40,  53:40\n  #3:  15:48,  58:34\n  #7:  35:28\n  #8:  13:59,  56:33\n  #9:  11:59,  55:38\n  #12:  34:34,  1:09:48\n  #13:  39:18,  41:13\n  #14:  36:34\n  #18:  19:26,  1:00:33\n  #35:  20:22,  1:02:27\n  #40:  32:51,  1:06:20\n  #72:  22:18,  1:04:13\n\nNorCal Blitz pitchers (start of inning)\n  #3:  0:05,  25:16,  42:25,  1:12:40\n\nPowered by #sidelineHD\nVT:20191005_08 / GI:20191005_08 / T0:1570304816024 / YT:http://sidelineHD.com/game-20191005_08  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U California Lady Bulldogs (#CaliforniaLadyBulldogs_10U_CLUB_fall19)\n10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\nFinal: 3-7\nRecorded at #PinkPantherTournament\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:06 top,  11:41 bot\n  #2:  25:17 top,  32:52 bot\n  #3:  42:26 top,  53:41 bot\n  #4:  1:12:41 top\n\nNorCal Blitz at-bats (times approximate)\n  #1:  11:40,  53:40\n  #3:  15:48,  58:34\n  #7:  35:28\n  #8:  13:59,  56:33\n  #9:  11:59,  55:38\n  #12:  34:34,  1:09:48\n  #13:  39:18,  41:13\n  #14:  36:34\n  #18:  19:26,  1:00:33\n  #35:  20:22,  1:02:27\n  #40:  32:51,  1:06:20\n  #72:  22:18,  1:04:13\n\nNorCal Blitz pitchers (start of inning)\n  #3:  0:05,  25:16,  42:25,  1:12:40\n\nPowered by #sidelineHD\nVT:20191005_08 / GI:20191005_08 / T0:1570304816024 / YT:http://sidelineHD.com/game-20191005_08  #LynkSpyder #GoPro", 
+      "title": "10U Pool California Lady Bulldogs vs. NorCal Blitz (2019.10.05)"
+    }, 
+    "publishedAt": "2019-10-08T07:39:00.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/KEdPIQLWHQI/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/KEdPIQLWHQI/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/KEdPIQLWHQI/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/KEdPIQLWHQI/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/KEdPIQLWHQI/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Pool California Lady Bulldogs vs. NorCal Blitz (2019.10.05)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "processed"
+  }
+}

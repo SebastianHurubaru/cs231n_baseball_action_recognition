@@ -1,0 +1,3 @@
+# Clip definitions for 10U Pool Freedom vs. United (2020.01.04)  VT:20200104_01 / GI:20200104_01
+# example: 1:00; 1:30; title ; YF ; HA
+#

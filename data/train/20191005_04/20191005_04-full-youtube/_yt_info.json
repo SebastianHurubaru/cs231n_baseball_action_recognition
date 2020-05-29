@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/rpoqV-QKM3WkMPMaiAKZFYeBvFI\"", 
+  "id": "dEQxvZ15Pkk", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-05T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U Extreme (#Extreme_10U_CLUB_fall19)\n10U SouthBay Diamonds (#SouthBayDiamonds_10U_CLUB_fall19)\nFinal: 10-0\nRecorded at #PinkPantherTournament\n\n\nPowered by #sidelineHD\nVT:20191005_04 / GI:20191005_04 / T0:1570304968595 / YT:http://sidelineHD.com/game-20191005_04  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U Extreme (#Extreme_10U_CLUB_fall19)\n10U SouthBay Diamonds (#SouthBayDiamonds_10U_CLUB_fall19)\nFinal: 10-0\nRecorded at #PinkPantherTournament\n\n\nPowered by #sidelineHD\nVT:20191005_04 / GI:20191005_04 / T0:1570304968595 / YT:http://sidelineHD.com/game-20191005_04  #LynkSpyder #GoPro", 
+      "title": "10U Pool Extreme vs. SouthBay Diamonds (2019.10.05)"
+    }, 
+    "publishedAt": "2019-10-07T18:38:07.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/dEQxvZ15Pkk/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/dEQxvZ15Pkk/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/dEQxvZ15Pkk/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/dEQxvZ15Pkk/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/dEQxvZ15Pkk/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Pool Extreme vs. SouthBay Diamonds (2019.10.05)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "processed"
+  }
+}

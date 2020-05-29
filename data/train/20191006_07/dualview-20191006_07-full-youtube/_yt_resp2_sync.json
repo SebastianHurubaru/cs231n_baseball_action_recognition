@@ -1,0 +1,61 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/QgUtl3MeSZWkEe4vdkc9a1rveG0\"", 
+  "id": "fV5bASIp_hE", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-06T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\n10U Storm (#Storm_10U_SBGS_fall19)\nFinal: 3-11\nRecorded at #PinkPantherTournament\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:06 top,  9:48 bot\n  #2:  17:28 top,  31:30 bot\n  #3:  38:13 top,  47:12 bot\n  #4:  58:05 top,  1:10:02 bot\n\nNorCal Blitz at-bats (times approximate)\n  #1:  15:19,  55:09,  56:09\n  #3:  12:36,  54:00\n  #8:  11:36,  51:10\n  #9:  9:47,  50:15\n  #12:  1:17:10\n  #13:  1:14:21\n  #14:  47:11,  1:20:02\n  #18:  31:29,  1:10:01\n  #35:  35:14\n  #40:  33:08\n  #72:  33:10,  1:16:12\n\nNorCal Blitz pitchers (start of inning)\n  #3:  0:05,  17:27\n  #18:  17:27,  38:12,  58:04\n\n#SanBrunoGirlsSoftball\nPowered by #sidelineHD\nVT:20191006_07 / GI:20191006_07 / T0:1570402727184 / YT:http://sidelineHD.com/game-20191006_07  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\n10U Storm (#Storm_10U_SBGS_fall19)\nFinal: 3-11\nRecorded at #PinkPantherTournament\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:06 top,  9:48 bot\n  #2:  17:28 top,  31:30 bot\n  #3:  38:13 top,  47:12 bot\n  #4:  58:05 top,  1:10:02 bot\n\nNorCal Blitz at-bats (times approximate)\n  #1:  15:19,  55:09,  56:09\n  #3:  12:36,  54:00\n  #8:  11:36,  51:10\n  #9:  9:47,  50:15\n  #12:  1:17:10\n  #13:  1:14:21\n  #14:  47:11,  1:20:02\n  #18:  31:29,  1:10:01\n  #35:  35:14\n  #40:  33:08\n  #72:  33:10,  1:16:12\n\nNorCal Blitz pitchers (start of inning)\n  #3:  0:05,  17:27\n  #18:  17:27,  38:12,  58:04\n\n#SanBrunoGirlsSoftball\nPowered by #sidelineHD\nVT:20191006_07 / GI:20191006_07 / T0:1570402727184 / YT:http://sidelineHD.com/game-20191006_07  #LynkSpyder #GoPro", 
+      "title": "10U Gold Bracket Final NorCal Blitz vs. Storm (2019.10.06)"
+    }, 
+    "publishedAt": "2019-10-08T07:52:21.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/fV5bASIp_hE/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/fV5bASIp_hE/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/fV5bASIp_hE/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/fV5bASIp_hE/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/fV5bASIp_hE/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Gold Bracket Final NorCal Blitz vs. Storm (2019.10.06)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

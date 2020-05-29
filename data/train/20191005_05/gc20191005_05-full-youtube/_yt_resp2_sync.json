@@ -1,0 +1,61 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/IBjdP8_aBo1udQa26JXU7bwYQGU\"", 
+  "id": "4DUXXc4SF00", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-05T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\n10U Extreme (#Extreme_10U_CLUB_fall19)\nFinal: 0-0\nRecorded at #PinkPantherTournament\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:06 top,  12:18 bot\n  #2:  16:24 top,  21:00 bot\n  #3:  34:04 top,  41:22 bot\n  #4:  48:59 top,  56:32 bot\n  #5:  1:02:51 top,  1:09:19 bot\n\nNorCal Blitz at-bats (times approximate)\n  #1:  12:17,  31:45,  1:14:12\n  #3:  14:53,  44:18\n  #7:  29:46,  1:12:04\n  #8:  14:34,  43:01\n  #9:  13:44,  41:21\n  #12:  20:59,  56:31\n  #13:  25:32,  59:58\n  #14:  27:10,  1:09:18\n  #18:  15:14,  45:36\n  #40:  23:20,  59:21\n\nNorCal Blitz pitchers (start of inning)\n  #18:  0:05,  16:23,  34:03,  48:58,  1:02:50\n\nPowered by #sidelineHD\nVT:20191005_05 / GI:20191005_05 / T0:1570287774420 / YT:http://sidelineHD.com/game-20191005_05  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U NorCal Blitz (#NorCalBlitz_10U_CLUB_fall19)\n10U Extreme (#Extreme_10U_CLUB_fall19)\nFinal: 0-0\nRecorded at #PinkPantherTournament\n\nIf you are using a desktop browser, #Jump2Play:\n\nInnings\n  #1:  0:06 top,  12:18 bot\n  #2:  16:24 top,  21:00 bot\n  #3:  34:04 top,  41:22 bot\n  #4:  48:59 top,  56:32 bot\n  #5:  1:02:51 top,  1:09:19 bot\n\nNorCal Blitz at-bats (times approximate)\n  #1:  12:17,  31:45,  1:14:12\n  #3:  14:53,  44:18\n  #7:  29:46,  1:12:04\n  #8:  14:34,  43:01\n  #9:  13:44,  41:21\n  #12:  20:59,  56:31\n  #13:  25:32,  59:58\n  #14:  27:10,  1:09:18\n  #18:  15:14,  45:36\n  #40:  23:20,  59:21\n\nNorCal Blitz pitchers (start of inning)\n  #18:  0:05,  16:23,  34:03,  48:58,  1:02:50\n\nPowered by #sidelineHD\nVT:20191005_05 / GI:20191005_05 / T0:1570287774420 / YT:http://sidelineHD.com/game-20191005_05  #LynkSpyder #GoPro", 
+      "title": "10U Pool NorCal Blitz vs. Extreme (2019.10.05)"
+    }, 
+    "publishedAt": "2019-10-07T16:05:57.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/4DUXXc4SF00/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/4DUXXc4SF00/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/4DUXXc4SF00/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/4DUXXc4SF00/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/4DUXXc4SF00/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Pool NorCal Blitz vs. Extreme (2019.10.05)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

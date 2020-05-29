@@ -1,0 +1,50 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/r7OmseanpD1e56HnwurpiyBt_Bg\"", 
+  "id": "S0eTf_6X20w", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2020-01-03T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultLanguage": "en", 
+    "description": "#IrvineGreatPark\n20200103_23\nsidelinehd.com/game-20200103_23", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "#IrvineGreatPark\n20200103_23\nsidelinehd.com/game-20200103_23", 
+      "title": "20200103_23-full-vid-Freedom_Patriots_IrvineGreatPark.mp4"
+    }, 
+    "publishedAt": "2020-01-04T17:20:23.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/S0eTf_6X20w/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/S0eTf_6X20w/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/S0eTf_6X20w/mqdefault.jpg", 
+        "width": 320
+      }
+    }, 
+    "title": "20200103_23-full-vid-Freedom_Patriots_IrvineGreatPark.mp4"
+  }, 
+  "status": {
+    "embeddable": false, 
+    "license": "youtube", 
+    "privacyStatus": "unlisted", 
+    "publicStatsViewable": true, 
+    "uploadStatus": "uploaded"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/YjJOPlKvNEe5KfUsZWl97m3l5xk\"", 
+  "id": "qossiPiTHfs", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-11-24T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "14U All American Sports Academy (#AllAmericanSportsAcademy_14U_CLUB_fall19)\n12U Cal Rays (#CalRays_12U_CLUB_fall19)\nFinal: 12-2\nRecorded at #DudleyChallenge\n\n\nPowered by #sidelineHD\nVT:20191124_13 / GI:20191124_13 / T0:1574635371180 / YT:http://sidelineHD.com/game-20191124_13  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "14U All American Sports Academy (#AllAmericanSportsAcademy_14U_CLUB_fall19)\n12U Cal Rays (#CalRays_12U_CLUB_fall19)\nFinal: 12-2\nRecorded at #DudleyChallenge\n\n\nPowered by #sidelineHD\nVT:20191124_13 / GI:20191124_13 / T0:1574635371180 / YT:http://sidelineHD.com/game-20191124_13  #LynkSpyder #GoPro", 
+      "title": "Bracket Championship 14U All American Sports Academy vs. 12U Cal Rays (2019.11.24)"
+    }, 
+    "publishedAt": "2019-11-26T15:54:23.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/qossiPiTHfs/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/qossiPiTHfs/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/qossiPiTHfs/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/qossiPiTHfs/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/qossiPiTHfs/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "Bracket Championship 14U All American Sports Academy vs. 12U Cal Rays (2019.11.24)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

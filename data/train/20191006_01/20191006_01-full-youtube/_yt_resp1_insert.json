@@ -1,0 +1,50 @@
+{
+  "etag": "\"p4VTdlkQv3HQeTEaXgvLePAydmU/bzX1D5lsbuOY8k8Pai1B7TBj3hk\"", 
+  "id": "3HYjE7EuUwc", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-06T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultLanguage": "en", 
+    "description": "#PinkPantherTournament\n20191006_01\nsidelinehd.com/game-20191006_01", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "#PinkPantherTournament\n20191006_01\nsidelinehd.com/game-20191006_01", 
+      "title": "20191006_01-full-vid-Sting_SouthBay_PinkPantherTournament.mp4"
+    }, 
+    "publishedAt": "2019-10-07T14:01:43.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/3HYjE7EuUwc/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/3HYjE7EuUwc/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/3HYjE7EuUwc/mqdefault.jpg", 
+        "width": 320
+      }
+    }, 
+    "title": "20191006_01-full-vid-Sting_SouthBay_PinkPantherTournament.mp4"
+  }, 
+  "status": {
+    "embeddable": false, 
+    "license": "youtube", 
+    "privacyStatus": "unlisted", 
+    "publicStatsViewable": true, 
+    "uploadStatus": "uploaded"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/sPHsWJlHyo-2fDXUmZECutsHN6g\"", 
+  "id": "lPdH2wthjGA", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-27T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10B Red Barons (#RedBarons_10B_SRGSL_sum19)\n10U California Riptide (#CaliforniaRiptide_10U_CLUB_fall19)\nFinal: 3-7\nRecorded at #JackBall\n\n\n#SantaRosaGirlsSoftballLeague\nPowered by #sidelineHD\nVT:20191027_03 / GI:20191027_03 / T0:1572210146160 / YT:http://sidelineHD.com/game-20191027_03  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10B Red Barons (#RedBarons_10B_SRGSL_sum19)\n10U California Riptide (#CaliforniaRiptide_10U_CLUB_fall19)\nFinal: 3-7\nRecorded at #JackBall\n\n\n#SantaRosaGirlsSoftballLeague\nPowered by #sidelineHD\nVT:20191027_03 / GI:20191027_03 / T0:1572210146160 / YT:http://sidelineHD.com/game-20191027_03  #LynkSpyder #GoPro", 
+      "title": "Silver Bracket 10B Red Barons vs. 10U California Riptide (2019.10.27)"
+    }, 
+    "publishedAt": "2019-10-28T11:15:41.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/lPdH2wthjGA/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/lPdH2wthjGA/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/lPdH2wthjGA/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/lPdH2wthjGA/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/lPdH2wthjGA/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "Silver Bracket 10B Red Barons vs. 10U California Riptide (2019.10.27)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}

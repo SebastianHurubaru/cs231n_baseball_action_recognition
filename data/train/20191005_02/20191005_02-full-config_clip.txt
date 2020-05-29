@@ -1,0 +1,5 @@
+# Clip definitions for 10U Pool SouthBay Diamonds vs. NorCal Blitz (2019.10.05)  VT:20191005_02 / GI:20191005_02
+# example: 1:00; 1:30; title ; YF ; HA
+#
+
+29:47; 30:18; #28 homers, gets a puppy; YF; A

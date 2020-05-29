@@ -1,0 +1,61 @@
+{
+  "etag": "\"j6xRRd8dTPVVptg711_CSPADRfg/NJlCLemYMdfQ3dj8Nh-6on4ltbo\"", 
+  "id": "Q7OCtLJxgWg", 
+  "kind": "youtube#video", 
+  "recordingDetails": {
+    "recordingDate": "2019-10-27T00:00:00.000Z"
+  }, 
+  "snippet": {
+    "categoryId": "17", 
+    "channelId": "UCKDbP5mxZdgocKfY0O8mGxw", 
+    "channelTitle": "Sideline HD", 
+    "defaultAudioLanguage": "en-US", 
+    "defaultLanguage": "en", 
+    "description": "10U Storm (#Storm_10U_SGF_fall19)\n10U Storm (#Storm_10U_SBGS_fall19)\nFinal: 2-1\nRecorded at #JackBall\n\n\n#SalinasGirlsFastpitch  #SanBrunoGirlsSoftball\nPowered by #sidelineHD\nVT:20191027_02 / GI:20191027_02 / T0:1572205196854 / YT:http://sidelineHD.com/game-20191027_02  #LynkSpyder #GoPro", 
+    "liveBroadcastContent": "none", 
+    "localized": {
+      "description": "10U Storm (#Storm_10U_SGF_fall19)\n10U Storm (#Storm_10U_SBGS_fall19)\nFinal: 2-1\nRecorded at #JackBall\n\n\n#SalinasGirlsFastpitch  #SanBrunoGirlsSoftball\nPowered by #sidelineHD\nVT:20191027_02 / GI:20191027_02 / T0:1572205196854 / YT:http://sidelineHD.com/game-20191027_02  #LynkSpyder #GoPro", 
+      "title": "10U Gold Bracket Storm vs. Storm (2019.10.27)"
+    }, 
+    "publishedAt": "2019-10-28T10:47:41.000Z", 
+    "tags": [
+      "yt:cc=on", 
+      "softball"
+    ], 
+    "thumbnails": {
+      "default": {
+        "height": 90, 
+        "url": "https://i.ytimg.com/vi/Q7OCtLJxgWg/default.jpg", 
+        "width": 120
+      }, 
+      "high": {
+        "height": 360, 
+        "url": "https://i.ytimg.com/vi/Q7OCtLJxgWg/hqdefault.jpg", 
+        "width": 480
+      }, 
+      "maxres": {
+        "height": 720, 
+        "url": "https://i.ytimg.com/vi/Q7OCtLJxgWg/maxresdefault.jpg", 
+        "width": 1280
+      }, 
+      "medium": {
+        "height": 180, 
+        "url": "https://i.ytimg.com/vi/Q7OCtLJxgWg/mqdefault.jpg", 
+        "width": 320
+      }, 
+      "standard": {
+        "height": 480, 
+        "url": "https://i.ytimg.com/vi/Q7OCtLJxgWg/sddefault.jpg", 
+        "width": 640
+      }
+    }, 
+    "title": "10U Gold Bracket Storm vs. Storm (2019.10.27)"
+  }, 
+  "status": {
+    "embeddable": true, 
+    "license": "youtube", 
+    "privacyStatus": "public", 
+    "publicStatsViewable": false, 
+    "uploadStatus": "uploaded"
+  }
+}
