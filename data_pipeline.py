@@ -7,16 +7,23 @@ Author:
 
 import tensorflow as tf
 import os
+import glob
 import json
 
 import numpy as np
 
 import tensorflow_datasets.public_api as tfds
 
-from util import get_logger
+import cv2
 
-from util import image_show
+from posing.lib.network import im_transform
+from posing.lib.network.rtpose_vgg import get_model
+from posing.lib.config import cfg, update_config
+from posing.lib.utils.common import draw_humans
+from posing.lib.utils.paf_to_pose import paf_to_pose_cpp
+from posing.lib.datasets.preprocessing import rtpose_preprocess
 
+import torch
 
 class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
@@ -30,6 +37,17 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
         self.MANUAL_DOWNLOAD_INSTRUCTIONS = "Dataset already downloaded manually"
 
         super(tfds.core.GeneratorBasedBuilder, self).__init__()
+
+        # update config file
+        update_config(cfg, args)
+
+        model = get_model('vgg19')
+        model.load_state_dict(torch.load(args.weight))
+        # model = torch.nn.DataParallel(model).cuda()
+        model.float()
+        model.eval()
+
+        self.pose_model = model
 
     def _info(self):
 
@@ -71,13 +89,13 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
                 },
             ),
 
-            tfds.core.SplitGenerator(
-                name=tfds.Split.TEST,
-                gen_kwargs={
-                    "split": tfds.Split.TEST,
-                    "input_dir": os.path.join(self.args.input_dir, 'test')
-                },
-            )
+            # tfds.core.SplitGenerator(
+            #     name=tfds.Split.TEST,
+            #     gen_kwargs={
+            #         "split": tfds.Split.TEST,
+            #         "input_dir": os.path.join(self.args.input_dir, 'test')
+            #     },
+            # )
         ]
 
     def _generate_examples(self, split, input_dir):
@@ -127,7 +145,7 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
             _, current_dir_name = os.path.split(current_dir)
 
             target_dir = os.path.join(
-                f"{self.args.temp_proc_dir}_{self.args.frames_per_second}x{self.args.frame_width}x{self.args.frame_height}x{self.args.frame_channels}",
+                f"{os.path.expanduser(self.args.temp_proc_dir)}_{self.args.frames_per_second}x{self.args.frame_width}x{self.args.frame_height}x{self.args.frame_channels}",
                 current_dir_name)
 
             # Do not run ffmpeg if already run
@@ -147,6 +165,15 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
             self.log.info(f"Processing video {video_meta['mpegFilename']}")
 
+            if self.args.include_posing:
+
+                posing_target_dir = target_dir + '_posing'
+                if not os.path.exists(posing_target_dir):
+                    os.makedirs(posing_target_dir)
+
+                    self.generate_posing_from_pictures(target_dir, posing_target_dir)
+                    target_dir = posing_target_dir
+
             prev_frame_index = 1
             for t in range(int(video_meta['mpegDurationSeconds'])):
 
@@ -161,3 +188,44 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
                     }
 
                 prev_frame_index = current_frame_index + 1
+
+    def generate_posing_from_pictures(self, source_folder, dest_folder):
+
+        images = glob.glob(os.path.join(source_folder, '*.jpg'))
+
+        for image in images:
+
+            image_file_name = os.path.split(image)[1]
+
+            oriImg = cv2.imread(image)  # B,G,R order
+
+            # Get results of original image
+            with torch.no_grad():
+                paf, heatmap = self.get_outputs(oriImg, self.pose_model)
+
+            humans = paf_to_pose_cpp(heatmap, paf, cfg)
+
+            out = draw_humans(oriImg, humans)
+            cv2.imwrite(os.path.join(dest_folder, image_file_name), out)
+
+    def get_outputs(self, img, model):
+        """Computes the averaged heatmap and paf for the given image
+        :param multiplier:
+        :param origImg: numpy array, the image being processed
+        :param model: pytorch model
+        :returns: numpy arrays, the averaged paf and heatmap
+        """
+
+        im_data = rtpose_preprocess(img)
+
+        batch_images = np.expand_dims(im_data, 0)
+
+        # several scales as a batch
+        # batch_var = torch.from_numpy(batch_images).cuda().float()
+        batch_var = torch.from_numpy(batch_images).float()
+        predicted_outputs, _ = model(batch_var)
+        output1, output2 = predicted_outputs[-2], predicted_outputs[-1]
+        heatmap = output2.cpu().data.numpy().transpose(0, 2, 3, 1)[0]
+        paf = output1.cpu().data.numpy().transpose(0, 2, 3, 1)[0]
+
+        return paf, heatmap

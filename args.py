@@ -96,7 +96,7 @@ def add_common_args(parser):
 
     parser.add_argument('--temp_proc_dir',
                         type=str,
-                        default='/home/shurubaru/tensorflow_datasets/videos_to_frames')
+                        default='~/tensorflow_datasets/videos_to_frames')
 
     parser.add_argument('--dataset_version',
                         type=str,
@@ -112,11 +112,11 @@ def add_common_args(parser):
 
     parser.add_argument('--frame_height',
                         type=int,
-                        default='224')
+                        default='720')
 
     parser.add_argument('--frame_width',
                         type=int,
-                        default='368')
+                        default='1280')
 
     parser.add_argument('--frame_channels',
                         type=int,
@@ -135,6 +135,25 @@ def add_common_args(parser):
                         type=str,
                         default='./save/',
                         help='Base directory for saving information.')
+
+    parser.add_argument('--include_posing',
+                        type=lambda s: s.lower().startswith('t'),
+                        default=True,
+                        help='Whether to include human posing.')
+
+    parser.add_argument('--cfg',
+                        type=str,
+                        default='./posing/experiments/vgg19_368x368_sgd.yaml',
+                        help='experiment configure file name')
+
+    parser.add_argument('--weight',
+                        type=str,
+                        default='./posing/experiments/pose_model.pth')
+
+    parser.add_argument('opts',
+                        help="Modify config options using the command-line",
+                        default=None,
+                        nargs=argparse.REMAINDER)
 
     parser.add_argument('--log_device_placement',
                         type=bool,
