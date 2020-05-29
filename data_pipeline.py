@@ -118,7 +118,7 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
                         # Set label to 1 for the found timestep
                         radar_velocity[t] = [0, 1]
                         keep_index[t-self.args.timesteps_to_keep:t] = True
-                        keep_index[t:t + self.args.timesteps_to_keep] = True
+                        keep_index[t:t + self.args.timesteps_to_keep + 1] = True
 
             # Get the directory where the file is located
             current_dir = os.path.dirname(file.numpy().decode('utf-8'))

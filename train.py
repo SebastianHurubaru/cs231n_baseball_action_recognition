@@ -85,7 +85,8 @@ if __name__ == '__main__':
     builder.download_and_prepare(
         download_config=tfds.download.DownloadConfig(
             download_mode=tfds.core.download.GenerateMode.REUSE_DATASET_IF_EXISTS,
-            manual_dir=args.input_dir
+            manual_dir=args.input_dir,
+            compute_stats=False
         )
     )
 

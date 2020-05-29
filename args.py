@@ -112,15 +112,15 @@ def add_common_args(parser):
 
     parser.add_argument('--frame_height',
                         type=int,
-                        default='720')
+                        default='224')
 
     parser.add_argument('--frame_width',
                         type=int,
-                        default='1280')
+                        default='368')
 
     parser.add_argument('--frame_channels',
                         type=int,
-                        default='1')
+                        default='3')
 
     parser.add_argument('--timesteps_to_keep',
                         type=int,
