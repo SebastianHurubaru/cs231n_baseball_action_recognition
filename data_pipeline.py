@@ -14,9 +14,9 @@ import numpy as np
 
 import tensorflow_datasets.public_api as tfds
 
-import cv2
+from util import torch_get_available_devices
 
-from posing.lib.network import im_transform
+import cv2
 from posing.lib.network.rtpose_vgg import get_model
 from posing.lib.config import cfg, update_config
 from posing.lib.utils.common import draw_humans
@@ -24,6 +24,7 @@ from posing.lib.utils.paf_to_pose import paf_to_pose_cpp
 from posing.lib.datasets.preprocessing import rtpose_preprocess
 
 import torch
+import torch.utils.data as data
 
 class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
@@ -43,11 +44,13 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
         model = get_model('vgg19')
         model.load_state_dict(torch.load(args.weight))
-        # model = torch.nn.DataParallel(model).cuda()
+
+        device, gpu_ids = torch_get_available_devices()
+        model = torch.nn.DataParallel(model, gpu_ids)
         model.float()
         model.eval()
 
-        self.pose_model = model
+        self.pose_model = model.to(device)
 
     def _info(self):
 
@@ -165,14 +168,14 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
             self.log.info(f"Processing video {video_meta['mpegFilename']}")
 
+            dest_dir = target_dir
+            gen_joints = False
             if self.args.include_posing:
 
-                posing_target_dir = target_dir + '_posing'
-                if not os.path.exists(posing_target_dir):
-                    os.makedirs(posing_target_dir)
-
-                    self.generate_posing_from_pictures(target_dir, posing_target_dir)
-                    target_dir = posing_target_dir
+                dest_dir = target_dir + '_posing'
+                if not os.path.exists(dest_dir):
+                    os.makedirs(dest_dir)
+                    gen_joints = True
 
             prev_frame_index = 1
             for t in range(int(video_meta['mpegDurationSeconds'])):
@@ -180,7 +183,12 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
                 current_frame_index = (t+1) * self.args.frames_per_second
 
                 if keep_index[t]:
-                    frame = [os.path.join(target_dir, f'{frame}.jpg') for frame in range(prev_frame_index, current_frame_index+1)]
+
+                    if gen_joints is True:
+                        self.generate_posing_from_pictures([os.path.join(target_dir, f'{frame}.jpg') for frame in
+                                                            range(prev_frame_index, current_frame_index + 1)], dest_dir)
+
+                    frame = [os.path.join(dest_dir, f'{frame}.jpg') for frame in range(prev_frame_index, current_frame_index + 1)]
 
                     yield f"{video_meta['mpegFilename']}_{t}", {
                         'frame': frame,
@@ -189,43 +197,51 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
                 prev_frame_index = current_frame_index + 1
 
-    def generate_posing_from_pictures(self, source_folder, dest_folder):
+    def generate_posing_from_pictures(self, images, dest_folder):
 
-        images = glob.glob(os.path.join(source_folder, '*.jpg'))
+        image_file_names = [os.path.split(image)[1] for image in images]
 
-        for image in images:
+        oriImages = [cv2.imread(image) for image in images]  # B,G,R order
 
-            image_file_name = os.path.split(image)[1]
+        # Get results of original image
+        with torch.no_grad():
+            paf, heatmap = self.get_outputs(oriImages, self.pose_model)
 
-            oriImg = cv2.imread(image)  # B,G,R order
+        humans = [paf_to_pose_cpp(heatmap[i], paf[i], cfg) for i in range(len(images))]
 
-            # Get results of original image
-            with torch.no_grad():
-                paf, heatmap = self.get_outputs(oriImg, self.pose_model)
+        out = [draw_humans(oriImages[i], humans[i]) for i in range(len(images))]
 
-            humans = paf_to_pose_cpp(heatmap, paf, cfg)
+        [cv2.imwrite(os.path.join(dest_folder, image_file_names[i]), out[i]) for i in range(len(images))]
 
-            out = draw_humans(oriImg, humans)
-            cv2.imwrite(os.path.join(dest_folder, image_file_name), out)
-
-    def get_outputs(self, img, model):
-        """Computes the averaged heatmap and paf for the given image
-        :param multiplier:
-        :param origImg: numpy array, the image being processed
-        :param model: pytorch model
-        :returns: numpy arrays, the averaged paf and heatmap
+    def get_outputs(self, images, model):
+        """Computes the averaged heatmap and paf for givens images
         """
 
-        im_data = rtpose_preprocess(img)
+        im_data = [rtpose_preprocess(image) for image in images]
 
-        batch_images = np.expand_dims(im_data, 0)
+        batch_images = np.asarray(im_data)
 
         # several scales as a batch
-        # batch_var = torch.from_numpy(batch_images).cuda().float()
-        batch_var = torch.from_numpy(batch_images).float()
-        predicted_outputs, _ = model(batch_var)
-        output1, output2 = predicted_outputs[-2], predicted_outputs[-1]
-        heatmap = output2.cpu().data.numpy().transpose(0, 2, 3, 1)[0]
-        paf = output1.cpu().data.numpy().transpose(0, 2, 3, 1)[0]
+        output1, output2 = None, None
+
+        images_loader = data.DataLoader(batch_images,
+                                       batch_size=self.args.posing_batch_size,
+                                       shuffle=False,
+                                       num_workers=0)
+
+
+        for image_batch in images_loader:
+
+            predicted_outputs, _ = model(image_batch)
+            predicted_outputs = predicted_outputs[0].cpu().data.numpy(), predicted_outputs[1].cpu().data.numpy()
+            torch.cuda.empty_cache()
+            if output1 is not None and output2 is not None:
+                output1 = np.concatenate([output1, predicted_outputs[-2]], axis=0)
+                output2 = np.concatenate([output2, predicted_outputs[-1]], axis=0)
+            else:
+                output1, output2 = predicted_outputs[-2], predicted_outputs[-1]
+
+        heatmap = output2.transpose(0, 2, 3, 1)
+        paf = output1.transpose(0, 2, 3, 1)
 
         return paf, heatmap

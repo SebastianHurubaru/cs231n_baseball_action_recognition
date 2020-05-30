@@ -141,6 +141,10 @@ def add_common_args(parser):
                         default=True,
                         help='Whether to include human posing.')
 
+    parser.add_argument('--posing_batch_size',
+                        type=int,
+                        default='16')
+
     parser.add_argument('--cfg',
                         type=str,
                         default='./posing/experiments/vgg19_368x368_sgd.yaml',
