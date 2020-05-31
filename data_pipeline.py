@@ -92,13 +92,13 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
                 },
             ),
 
-            tfds.core.SplitGenerator(
-                name=tfds.Split.TEST,
-                gen_kwargs={
-                    "split": tfds.Split.TEST,
-                    "input_dir": os.path.join(self.args.input_dir, 'test')
-                },
-            )
+            # tfds.core.SplitGenerator(
+            #     name=tfds.Split.TEST,
+            #     gen_kwargs={
+            #         "split": tfds.Split.TEST,
+            #         "input_dir": os.path.join(self.args.input_dir, 'test')
+            #     },
+            # )
         ]
 
     def _generate_examples(self, split, input_dir):

@@ -64,6 +64,11 @@ def get_train_args():
                         default=False,
                         help='Whether to use learn rate scheduler.')
 
+    parser.add_argument('--class_weights',
+                        type=float,
+                        nargs="*",
+                        default=[0.05, 300],
+                        help='Class weights.')
 
     args = parser.parse_args()
 

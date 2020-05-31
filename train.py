@@ -22,9 +22,15 @@ from util import *
 def train_step(inputs):
     frames, labels = inputs
 
+    idx = tf.stack([tf.reshape(tf.range(labels.shape[0], dtype=tf.int64), (-1, 1)),
+                    tf.reshape(tf.argmax(labels, axis=1), (-1, 1))],
+                   axis=-1)
+    class_weights = tf.gather_nd(tf.convert_to_tensor([args.class_weights] * labels.shape[0]),
+                                 indices=idx)
+
     with tf.GradientTape() as tape:
         predictions = model(frames, training=True)
-        loss = compute_loss(labels, predictions)
+        loss = compute_loss(labels, predictions, class_weights)
 
     gradients = tape.gradient(loss, model.trainable_variables)
     optimizer.apply_gradients(zip(gradients, model.trainable_variables))
@@ -63,6 +69,10 @@ def periodically_train_task():
     tf.summary.scalar('train_loss', total_loss / num_batches, step=checkpoint.step.numpy())
     [tf.summary.scalar(train_metric.name, train_metric.result() * 100, step=checkpoint.step.numpy()) for train_metric in train_metrics]
 
+    # Print to log
+    log_metrics = [f'train_loss - {total_loss / num_batches}'] + [
+        f'{train_metric.name} - {train_metric.result().numpy()})' for train_metric in train_metrics]
+    log.info(f'Training step - {checkpoint.step.numpy()} ' + ', '.join(log_metrics))
 
 
 if __name__ == '__main__':
@@ -177,7 +187,13 @@ if __name__ == '__main__':
                 distributed_eval_step((frames, labels))
 
             tf.summary.scalar('dev_loss', dev_loss.result(), step=checkpoint.step.numpy())
-            [tf.summary.scalar(dev_metric.name, dev_metric.result() * 100, step=checkpoint.step.numpy()) for dev_metric in dev_metrics]
+            [tf.summary.scalar(dev_metric.name, dev_metric.result() * 100, step=checkpoint.step.numpy()) for dev_metric
+             in dev_metrics]
+
+            # Print to log
+            log_metrics = [f'dev_loss - {dev_loss.result().numpy()}'] + [
+                f'{dev_metric.name} - {dev_metric.result().numpy()})' for dev_metric in dev_metrics]
+            log.info(f'Training step - {checkpoint.step.numpy()} ' + ', '.join(log_metrics))
 
             dev_loss.reset_states()
             [metric.reset_states() for metric in train_metrics + dev_metrics]
