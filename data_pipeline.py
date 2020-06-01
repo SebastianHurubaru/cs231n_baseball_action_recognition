@@ -26,6 +26,8 @@ from posing.lib.datasets.preprocessing import rtpose_preprocess
 import torch
 import torch.utils.data as data
 
+# import pydevd
+
 class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
     def __init__(self, args, log):
@@ -44,13 +46,7 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
         model = get_model('vgg19')
         model.load_state_dict(torch.load(args.weight))
-
-        device, gpu_ids = torch_get_available_devices()
-        model = torch.nn.DataParallel(model, gpu_ids)
-        model.float()
-        model.eval()
-
-        self.pose_model = model.to(device)
+        self.pose_model = model
 
     def _info(self):
 
@@ -92,13 +88,13 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
                 },
             ),
 
-            # tfds.core.SplitGenerator(
-            #     name=tfds.Split.TEST,
-            #     gen_kwargs={
-            #         "split": tfds.Split.TEST,
-            #         "input_dir": os.path.join(self.args.input_dir, 'test')
-            #     },
-            # )
+            tfds.core.SplitGenerator(
+                name=tfds.Split.TEST,
+                gen_kwargs={
+                    "split": tfds.Split.TEST,
+                    "input_dir": os.path.join(self.args.input_dir, 'test')
+                },
+            )
         ]
 
     def _generate_examples(self, split, input_dir):
@@ -221,6 +217,12 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
         batch_images = np.asarray(im_data)
 
+        # Put model on GPU
+        device, gpu_ids = torch_get_available_devices()
+        model_gpu = torch.nn.DataParallel(model, gpu_ids)
+        model_gpu.float()
+        model_gpu.eval()
+
         # several scales as a batch
         output1, output2 = None, None
 
@@ -232,7 +234,7 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
         for image_batch in images_loader:
 
-            predicted_outputs, _ = model(image_batch)
+            predicted_outputs, _ = model_gpu(image_batch)
             predicted_outputs = predicted_outputs[0].cpu().data.numpy(), predicted_outputs[1].cpu().data.numpy()
             torch.cuda.empty_cache()
             if output1 is not None and output2 is not None:
@@ -245,3 +247,29 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
         paf = output1.transpose(0, 2, 3, 1)
 
         return paf, heatmap
+
+
+    def _process_video_timestep_map_fn(self, timestep, label):
+
+        processed_timestep, label = tf.py_function(self._process_video_timestep,
+                                               inp=[timestep, label],
+                                               Tout=(tf.uint8, tf.int32))
+        return processed_timestep, label
+
+    def _process_video_timestep(self, timestep, label):
+
+        # Crop the center of the image and take every two frames
+        new_timestep = timestep[::3, 2*self.args.frame_height//5:, self.args.frame_width//4:self.args.frame_width - self.args.frame_width//4]
+
+        # To allow debugging in the combined static eager mode
+        # pydevd.settrace(suspend=True)
+        #
+        # import matplotlib.pyplot as plt
+        #
+        # plt.figure()
+        # plt.imshow(new_timestep[0].numpy())
+        # plt.axis('off')
+        # plt.show()
+        # plt.close()
+
+        return (new_timestep, label)

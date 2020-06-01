@@ -1,6 +1,11 @@
+import numpy as np
 import tensorflow as tf
 
 from tensorflow.keras.applications.inception_v3 import InceptionV3
+from tensorflow.keras.applications.vgg19 import VGG19
+from tensorflow.keras.applications.vgg16 import VGG16
+from tensorflow.keras.applications.resnet50 import ResNet50
+from tensorflow.keras.applications.xception import Xception
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, LSTM, Dropout
 
@@ -18,13 +23,14 @@ class BaselineModel(Model):
 
         self.args = args
 
-        self.inception = InceptionV3(weights='imagenet',
-                                     input_shape=(self.args.frame_width,
-                                                  self.args.frame_height,
-                                                  self.args.frame_channels),
-                                     include_top=False)
+        self.xception = Xception(weights='imagenet',
+                         input_shape=(3*self.args.frame_height//5,
+                                      self.args.frame_width // 2,
+                                      self.args.frame_channels),
+                         pooling='avg',
+                         include_top=False)
 
-        self.inception_output_size = 2048
+        self.xception_output_size = 2048
 
         self.rnn = LSTM(self.args.hidden_size)
 
@@ -36,25 +42,22 @@ class BaselineModel(Model):
 
     def call(self, x):
 
-        # x.shape =  (args.batch_size, args.frames_per_second, args.width, args.height, args.channels)
+        # x.shape =  (batch_size, frames_per_second, width, height, channels)
+        batch_size, fps, frame_height, frame_width, frame_channels = x.shape
 
-        x = tf.reshape(x, [-1, self.args.frame_height, self.args.frame_width, self.args.frame_channels])
-        # x.shape =  (args.batch_size * args.frames_per_second, args.width, args.height, args.channels)
+        x = tf.reshape(x, [-1, frame_height, frame_width, frame_channels])
+        # x.shape =  (batch_size * fps, frame_width, frame_height, frame_channels)
 
-        inception_out = self.inception(x)
-        # inception_out.shape =  (args.batch_size * args.frames_per_second, 1, 1, inception_output_size)
+        xception_out = self.xception(x)
+        # xception_out.shape =  (args.batch_size * args.frames_per_second, xception_output_size)
 
-        inception_out = tf.reshape(inception_out, [-1, self.args.frames_per_second, self.inception_output_size])
-        # inception_out.shape = (args.batch_size, args.frames_per_second, inception_output_size)
+        xception_out = tf.reshape(xception_out, [-1, fps, self.xception_output_size])
+        # xception_out.shape = (batch_size, fps, xception_output_size)
 
-        inception_out = self.dropout(inception_out)
+        rnn_out = self.rnn(self.dropout(xception_out))
+        # rnn_out.shape = (batch_size, hidden_size)
 
-        rnn_out = self.rnn(inception_out)
-        # rnn_out.shape = (args.batch_size, args.hidden_size)
-
-        rnn_out = self.dropout(rnn_out)
-
-        out = self.out(rnn_out)
-        # out.shape = (args.batch_size, 2)
+        out = self.out(self.dropout(rnn_out))
+        # out.shape = (batch_size, 2)
 
         return out

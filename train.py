@@ -104,8 +104,8 @@ if __name__ == '__main__':
 
     GLOBAL_BATCH_SIZE = args.batch_size * strategy.num_replicas_in_sync
 
-    ds_train = builder.as_dataset(split=tfds.Split.TRAIN, as_supervised=True).batch(GLOBAL_BATCH_SIZE)
-    ds_dev = builder.as_dataset(split=tfds.Split.VALIDATION, as_supervised=True).batch(GLOBAL_BATCH_SIZE)
+    ds_train = builder.as_dataset(split=tfds.Split.TRAIN, as_supervised=True).map(builder._process_video_timestep_map_fn).batch(GLOBAL_BATCH_SIZE)
+    ds_dev = builder.as_dataset(split=tfds.Split.VALIDATION, as_supervised=True).map(builder._process_video_timestep_map_fn).batch(GLOBAL_BATCH_SIZE)
 
     # distribute the dataset needed by the CentralStorageStrategy strategy
     ds_train = strategy.experimental_distribute_dataset(dataset=ds_train)
@@ -116,8 +116,8 @@ if __name__ == '__main__':
         # Create model loss
         loss_object = tf.keras.losses.BinaryCrossentropy(reduction=tf.keras.losses.Reduction.NONE)
 
-        def compute_loss(labels, predictions):
-            per_example_loss = loss_object(labels, predictions)
+        def compute_loss(labels, predictions, class_weights):
+            per_example_loss = loss_object(labels, predictions, class_weights)
             return tf.nn.compute_average_loss(per_example_loss, global_batch_size=GLOBAL_BATCH_SIZE)
 
 
