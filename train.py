@@ -44,9 +44,8 @@ def eval_step(inputs):
     frames, labels = inputs
 
     predictions = model(frames, training=False)
-    t_loss = loss_object(labels, predictions)
 
-    dev_loss.update_state(t_loss)
+    dev_loss.update_state(labels, predictions)
     [dev_metric.update_state(labels, predictions) for dev_metric in dev_metrics]
 
 
@@ -83,7 +82,7 @@ if __name__ == '__main__':
     configure_gpus()
 
     # Setup the output dir
-    run_dir = args.save_dir + '_' + args.name + '_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S")
+    run_dir = os.path.join(args.save_dir, args.name + '_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
     writer = tf.summary.create_file_writer(run_dir)
     writer.set_as_default()
 
@@ -123,7 +122,7 @@ if __name__ == '__main__':
 
 
         # define the metrics
-        dev_loss = tf.keras.metrics.Mean(name='dev_loss')
+        dev_loss = tf.keras.metrics.BinaryCrossentropy(name='dev_loss')
 
         train_metrics = [
             tf.keras.metrics.CategoricalAccuracy(name='train_accuracy'),
