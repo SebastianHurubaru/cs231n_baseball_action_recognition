@@ -119,7 +119,7 @@ class I3D(Model):
             Mixed([384, 192, 384, 48, 128, 128])
         ])
 
-        self.global_average_pool = AveragePooling3D((2, 23, 40), strides=(1, 1, 1), padding='valid')
+        self.global_average_pool = AveragePooling3D((2, 14, 20), strides=(1, 1, 1), padding='valid')
 
         self.out = Dense(2, activation='softmax')
 

@@ -253,17 +253,17 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
         if self.args.model == 'baseline':
 
-            processed_timestep, label = tf.py_function(self._process_video_timestep,
+            processed_timestep, label = tf.py_function(self._crop_and_skip_frames_process_video_timestep,
                                                    inp=[timestep, label],
                                                    Tout=(tf.float32, tf.int32))
         else:
-            processed_timestep, label = tf.py_function(self._empty_process_video_timestep,
+            processed_timestep, label = tf.py_function(self._crop_process_video_timestep,
                                                        inp=[timestep, label],
                                                        Tout=(tf.float32, tf.int32))
 
         return processed_timestep, label
 
-    def _process_video_timestep(self, timestep, label):
+    def _crop_and_skip_frames_process_video_timestep(self, timestep, label):
 
         # Crop the center of the image and take every two frames
         new_timestep = timestep[::3, 2*self.args.frame_height//5:, self.args.frame_width//4:self.args.frame_width - self.args.frame_width//4]
@@ -276,11 +276,14 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
         # plt.figure()
         # plt.imshow(new_timestep[0].numpy())
         # plt.axis('off')
-        # plt.show()
+        # plt.show()--optimizer=Adam
         # plt.close()
 
         return (tf.image.convert_image_dtype(new_timestep, dtype=tf.float32, saturate=False), label)
 
-    def _empty_process_video_timestep(self, timestep, label):
+    def _crop_process_video_timestep(self, timestep, label):
 
-        return tf.image.convert_image_dtype(timestep, dtype=tf.float32, saturate=False), label
+        new_timestep = timestep[:, 2 * self.args.frame_height // 5:,
+                       self.args.frame_width // 4:self.args.frame_width - self.args.frame_width // 4]
+
+        return tf.image.convert_image_dtype(new_timestep, dtype=tf.float32, saturate=False), label
