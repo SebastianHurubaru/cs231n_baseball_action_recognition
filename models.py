@@ -9,11 +9,14 @@ from tensorflow.keras.applications.xception import Xception
 from tensorflow.keras.models import Model
 from tensorflow.keras.layers import Dense, LSTM, Dropout
 
+from layers import *
 
 def create_model(model_name):
 
     if model_name == 'baseline':
         return BaselineModel
+    elif model_name == 'i3d':
+        return I3D
 
 
 class BaselineModel(Model):
@@ -61,3 +64,72 @@ class BaselineModel(Model):
         # out.shape = (batch_size, 2)
 
         return out
+
+class I3D(Model):
+
+    def __init__(self, args, **kwargs):
+        super(I3D, self).__init__(kwargs)
+
+        self.args = args
+
+        self.mixed_downsampling = tf.keras.Sequential([
+
+            # Downsampling via convolution (spatial and temporal)
+            Conv3d_BN(64, 7, 7, 7, strides=(2, 2, 2), padding='same'),
+
+            # Downsampling (spatial only)
+            MaxPooling3D((1, 3, 3), strides=(1, 2, 2), padding='same'),
+            Conv3d_BN(64, 1, 1, 1, strides=(1, 1, 1), padding='same'),
+            Conv3d_BN(192, 3, 3, 3, strides=(1, 1, 1), padding='same'),
+
+            # Downsampling (spatial only)
+            MaxPooling3D((1, 3, 3), strides=(1, 2, 2), padding='same'),
+
+            # Mixed 3b
+            Mixed([64, 96, 128, 16, 32, 32]),
+
+            # Mixed 3c
+            Mixed([128, 128, 192, 32, 96, 64]),
+
+            # Downsampling (spatial and temporal)
+            MaxPooling3D((3, 3, 3), strides=(2, 2, 2), padding='same'),
+
+            # Mixed 4b
+            Mixed([192, 96, 208, 16, 48, 64]),
+
+            # Mixed 4c
+            Mixed([160, 112, 224, 24, 64, 64]),
+
+            # Mixed 4d
+            Mixed([128, 128, 256, 24, 64, 64]),
+
+            # Mixed 4e
+            Mixed([112, 144, 288, 32, 64, 64]),
+
+            # Mixed 4f
+            Mixed([256, 160, 320, 32, 128, 128]),
+
+            # Downsampling (spatial and temporal)
+            MaxPooling3D((2, 2, 2), strides=(2, 2, 2), padding='same'),
+
+            # Mixed 5b
+            Mixed([256, 160, 320, 32, 128, 128]),
+
+            # Mixed 5c
+            Mixed([384, 192, 384, 48, 128, 128])
+        ])
+
+        self.global_average_pool = AveragePooling3D((2, 23, 40), strides=(1, 1, 1), padding='valid')
+
+        self.out = Dense(2, activation='softmax')
+
+    def call(self, x):
+
+        out = self.mixed_downsampling(x)
+
+        out = self.global_average_pool(out)
+
+        out = self.out(tf.reduce_mean(tf.squeeze(out, [2, 3]), axis=1, keepdims=False))
+
+        return out
+

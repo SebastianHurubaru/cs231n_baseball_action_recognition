@@ -251,9 +251,16 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
 
     def _process_video_timestep_map_fn(self, timestep, label):
 
-        processed_timestep, label = tf.py_function(self._process_video_timestep,
-                                               inp=[timestep, label],
-                                               Tout=(tf.uint8, tf.int32))
+        if self.args.model == 'baseline':
+
+            processed_timestep, label = tf.py_function(self._process_video_timestep,
+                                                   inp=[timestep, label],
+                                                   Tout=(tf.float32, tf.int32))
+        else:
+            processed_timestep, label = tf.py_function(self._empty_process_video_timestep,
+                                                       inp=[timestep, label],
+                                                       Tout=(tf.float32, tf.int32))
+
         return processed_timestep, label
 
     def _process_video_timestep(self, timestep, label):
@@ -272,4 +279,8 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
         # plt.show()
         # plt.close()
 
-        return (new_timestep, label)
+        return (tf.image.convert_image_dtype(new_timestep, dtype=tf.float32, saturate=False), label)
+
+    def _empty_process_video_timestep(self, timestep, label):
+
+        return tf.image.convert_image_dtype(timestep, dtype=tf.float32, saturate=False), label
