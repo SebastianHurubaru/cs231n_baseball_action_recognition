@@ -11,6 +11,7 @@ import glob
 import json
 
 import numpy as np
+import pandas as pd
 
 import tensorflow_datasets.public_api as tfds
 
@@ -47,6 +48,13 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
         model = get_model('vgg19')
         model.load_state_dict(torch.load(args.weight))
         self.pose_model = model
+
+        # Read the full csv data
+        df = pd.read_csv(os.path.join(args.input_dir, 'video_data_labels.csv'),
+                         dtype=str,
+                         index_col=0)
+
+        self.video_data_df = df[['game_id', 'radar_event_in_secs', 'is_pitch']]
 
     def _info(self):
 
@@ -132,10 +140,17 @@ class FramesDatasetBuilder(tfds.core.GeneratorBasedBuilder):
                         # Get the velocity at each time
                         t = overlay['vidTimeInSecs']
 
-                        # Set label to 1 for the found timestep
-                        radar_velocity[t] = [0, 1]
-                        keep_index[t-self.args.timesteps_to_keep:t] = True
-                        keep_index[t:t + self.args.timesteps_to_keep + 1] = True
+                        is_pitch = self.video_data_df[(self.video_data_df['game_id'] == video_meta['gameId']) &
+                                                      (self.video_data_df['radar_event_in_secs'] == str(t))]['is_pitch'].values
+
+                        if is_pitch.size == 1 and is_pitch[0] == str(1):
+                            # Set label to 1 for the found timestep
+                            radar_velocity[t] = [0, 1]
+                            keep_index[t-self.args.timesteps_to_keep:t + self.args.timesteps_to_keep + 1] = True
+                        else:
+                            # Set label to 0 for radar data that are no pitches
+                            radar_velocity[t] = [1, 0]
+                            keep_index[t] = True
 
             # Get the directory where the file is located
             current_dir = os.path.dirname(file.numpy().decode('utf-8'))
