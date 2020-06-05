@@ -7,6 +7,9 @@ Author:
 import tensorflow as tf
 import tensorflow_datasets as tfds
 
+import numpy as np
+from sklearn.utils import class_weight
+
 import sys
 import datetime
 from json import dumps
@@ -106,6 +109,22 @@ if __name__ == '__main__':
 
     ds_train = builder.as_dataset(split=tfds.Split.TRAIN, as_supervised=True).map(builder._process_video_timestep_map_fn).batch(GLOBAL_BATCH_SIZE)
     ds_dev = builder.as_dataset(split=tfds.Split.VALIDATION, as_supervised=True).map(builder._process_video_timestep_map_fn).batch(GLOBAL_BATCH_SIZE)
+
+    # # Compute class weights
+    # labels = []
+    # for _, label in ds_train:
+    #     labels += [np.argmax(label[i]) for i in range(label.shape[0])]
+    # # length = 24279
+    # print(f'Size of the training set is {len(labels)}')
+    # labels = np.asarray(labels)
+    # class_weights = class_weight.compute_class_weight('balanced',
+    #                                                   np.unique(labels),
+    #                                                   labels)
+    #
+    # # Print the class weights to add them as default parameters for the train.py
+    # print(f'Computed class weights for the training data are: {class_weights}')
+    #
+    # sys.exit(0)
 
     # distribute the dataset needed by the CentralStorageStrategy strategy
     ds_train = strategy.experimental_distribute_dataset(dataset=ds_train)

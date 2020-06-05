@@ -67,7 +67,7 @@ def get_train_args():
     parser.add_argument('--class_weights',
                         type=float,
                         nargs="*",
-                        default=[0.5, 3],
+                        default=[0.57253691, 3.94652146],
                         help='Class weights.')
 
     args = parser.parse_args()
