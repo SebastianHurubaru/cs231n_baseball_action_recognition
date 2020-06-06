@@ -82,7 +82,7 @@ if __name__ == '__main__':
     configure_gpus()
 
     # Setup the output dir
-    run_dir = os.path.join(args.save_dir, args.name + '_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
+    run_dir = os.path.join(args.save_dir, 'train', args.name + '_' + datetime.datetime.now().strftime("%Y%m%d_%H%M%S"))
     writer = tf.summary.create_file_writer(run_dir)
     writer.set_as_default()
 
